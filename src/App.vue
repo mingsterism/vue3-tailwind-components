@@ -1,5 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
+  <HelloWorld />
   <HelloWorld />
   <TestWorld />
 </template>

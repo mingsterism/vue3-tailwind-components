@@ -43,3 +43,8 @@ yarn build:js_css
 ```
 yarn lint
 ```
+
+
+## References
+Part 1 https://shubhadip.medium.com/vue-3-component-library-ee03ec13e567
+Part 2 https://shubhadip.medium.com/component-library-vue-3-rollup-2c16d053203e

@@ -1,3 +1,5 @@
+const tailwindcss = require('tailwindcss')
+
 const path = require("path");
 module.exports = {
   plugins: {
@@ -24,6 +26,7 @@ module.exports = {
     "postcss-url": {},
     autoprefixer: {
       overrideBrowserslist: "> 1%, IE 6, Explorer >= 10, Safari >= 7"
-    }
+    },
+    "tailwindcss": {}
   }
 };

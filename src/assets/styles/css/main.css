@@ -2,3 +2,9 @@ $red: red;
 $yellow: yellow;
 $blue: blue;
 $green: green;
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

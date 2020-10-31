@@ -12,16 +12,20 @@
       <div
         class="font-sans flex row-span-1 col-span-2 content-center text-center m-auto"
       >
-        <p class=" text-2xl text-blue m-auto">HIGHEST BID:&nbsp;&nbsp;</p>
-        <div class="text-5xl text-black font-bold m-auto">
+        <p class=" text-xl font-bold text-blue m-auto">
+          HIGHEST BID:&nbsp;&nbsp;
+        </p>
+        <div class="text-4xl text-black font-bold m-auto">
           {{ currency }} {{ highestBid }}
         </div>
       </div>
       <div
         class="font-sans flex row-span-1 col-span-2 content-center text-center m-auto"
       >
-        <p class=" text-2xl text-blue m-auto">LOWEST ASK:&nbsp;&nbsp;</p>
-        <div class="text-5xl text-black font-bold m-auto">
+        <p class=" text-xl font-bold text-blue m-auto">
+          LOWEST ASK:&nbsp;&nbsp;
+        </p>
+        <div class="text-4xl text-black font-bold m-auto">
           {{ currency }} {{ lowestAsk }}
         </div>
       </div>

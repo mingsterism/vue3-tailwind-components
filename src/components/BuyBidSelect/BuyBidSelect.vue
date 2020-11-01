@@ -30,34 +30,6 @@
         </div>
       </div>
     </div>
-    <div v-if="activeBuy" class="flex mb-4">
-      <button
-        @click="onPlaceBidHandler"
-        class="w-1/2 border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-l"
-      >
-        PLACE BID
-      </button>
-      <button
-        @click="onBuybidHandler"
-        class="w-1/2 border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-r border-b-4 border-blue"
-      >
-        BUY NOW
-      </button>
-    </div>
-    <div v-if="activeBid" class="flex mb-4">
-      <button
-        @click="onPlaceBidHandler"
-        class="w-1/2 border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-l border-b-4 border-blue"
-      >
-        PLACE BID
-      </button>
-      <button
-        @click="onBuybidHandler"
-        class="w-1/2 border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-r"
-      >
-        BUY NOW
-      </button>
-    </div>
   </div>
 </template>
 <style scoped>

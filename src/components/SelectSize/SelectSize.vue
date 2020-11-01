@@ -1,23 +1,25 @@
 <template>
-  <div class="grid grid-cols-3 gap-4">
-    <div
-      v-for="item in size"
-      class="cursor-pointer bg-blue text-white rounded-md py-4"
-      v-on:click="onSelectedSize(item.id)"
-      :key="item.id"
-      v-bind:class="{ activeRed: isActive == item.id }"
-    >
-      <p v-bind:class="{ paracolor: isActive == item.id }">
-        {{ item.name }}
-      </p>
-      <p
-        v-bind:class="{
-          paracolor: isActive == item.id,
-          'para-text-red-color': isSellActive
-        }"
+  <div class="contaioner">
+    <div class="flex flex-wrap -mx-2 overflow-hidden">
+      <div
+        v-for="item in size"
+        class="cursor-pointer bg-blue text-white m-2 p-2 w-1/4 overflow-hidden"
+        v-on:click="onSelectedSize(item.id)"
+        :key="item.id"
+        v-bind:class="{ activeRed: isActive == item.id }"
       >
-        {{ item.currencyType }} {{ item.price }}
-      </p>
+        <p v-bind:class="{ paracolor: isActive == item.id }">
+          {{ item.name }}
+        </p>
+        <p
+          v-bind:class="{
+            paracolor: isActive == item.id,
+            'para-text-red-color': isSellActive
+          }"
+        >
+          {{ item.currencyType }} {{ item.price }}
+        </p>
+      </div>
     </div>
   </div>
 </template>

@@ -14,8 +14,9 @@
   <p class="font-bold my-2 text-2xl">Select Size</p>
   <SelectSize class="w-full mx-auto" />
   <hr />
-  <p class="font-bold my-2 text-2xl">Total Price</p>
-  <totalPrice
+  <p class="font-bold my-2 text-2xl">CalculationTable</p>
+  <!-- Rename this as well to refect -->
+  <CalculationTable
     currency="RM"
     purchasePrice="250"
     processingFee="0"
@@ -125,7 +126,7 @@ import ProductCard from "./components/ProductCard/ProductCard.vue";
 import SelectSize from "./components/SelectSize/SelectSize.vue";
 import ProductDetails from "./components/ProductDetails/ProductDetails.vue";
 import BackNextBtn from "./components/BackNextBtn/BackNextBtn.vue";
-import totalPrice from "./components/totalPrice/totalPrice.vue";
+import CalculationTable from "./components/CalculationTable/CalculationTable.vue";
 import toggleSwitch from "./components/toggleSwitch/toggleSwitch.vue";
 // Importing Molecules
 import DynamicTable from "@/components/molecules/DynamicTable.molecule.vue";
@@ -151,7 +152,7 @@ export default {
     SelectSize,
     ProductDetails,
     BackNextBtn,
-    totalPrice,
+    CalculationTable,
     toggleSwitch,
     // Molecules
     DynamicTable,

@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import CalculationTable from "./CalculationTable.vue";
+import CalculationTable from "./molecules/CalculationTable.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

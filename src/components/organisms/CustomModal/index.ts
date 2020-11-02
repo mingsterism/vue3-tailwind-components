@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import CustomModal from "./CustomModal/organism.vue";
+import CustomModal from "./organisms/CustomModal.organism.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

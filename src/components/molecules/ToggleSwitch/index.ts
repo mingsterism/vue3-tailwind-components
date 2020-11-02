@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import toggleSwitch from "./toggleSwitch.molecule.vue";
+import toggleSwitch from "./molecules/ToggleSwitch.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

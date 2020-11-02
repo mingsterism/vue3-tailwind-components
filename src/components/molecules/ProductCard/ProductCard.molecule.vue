@@ -2,7 +2,7 @@
   <div class="p-4 border-red-4 max-w-sm rounded overflow-hidden shadow-lg">
     <img
       class="w-full"
-      src="../../assets/Nike-Dunk-High-Michigan.png"
+      src="../../../assets/Nike-Dunk-High-Michigan.png"
       alt="Sunset in the mountains"
     />
     <div class="px-6 py-4">

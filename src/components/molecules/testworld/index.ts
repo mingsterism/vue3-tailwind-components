@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import TestWorld from "./TestWorld.molecule.vue";
+import TestWorld from "./molecules/TestWorld.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import BackNextBtn from "./BackNextBtn.molecule.vue";
+import BackNextBtn from "./molecules/BackNextBtn.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

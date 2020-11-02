@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import CustomInput from "./CustomInput.molecule.vue";
+import CustomInput from "./molecules/CustomInput.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

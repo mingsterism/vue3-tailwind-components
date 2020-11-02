@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import InfoBox from "./InfoBox/organism.vue";
+import InfoBox from "./organisms/InfoBox.organism.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

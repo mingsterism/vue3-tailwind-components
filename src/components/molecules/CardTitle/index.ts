@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import CardTitle from "./CardTitle.molecule.vue";
+import CardTitle from "./molecules/CardTitle.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

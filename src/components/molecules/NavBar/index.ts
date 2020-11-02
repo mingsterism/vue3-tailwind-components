@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import NavBar from "./NavBar.molecule.vue";
+import NavBar from "./molecules/NavBar.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

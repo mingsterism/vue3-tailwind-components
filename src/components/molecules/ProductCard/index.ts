@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import ProductCard from "./ProductCard.molecule.vue";
+import ProductCard from "./molecules/ProductCard.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

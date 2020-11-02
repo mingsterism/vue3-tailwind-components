@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import Partitions from "./Partitions.molecule.vue";
+import Partitions from "./molecules/Partitions.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

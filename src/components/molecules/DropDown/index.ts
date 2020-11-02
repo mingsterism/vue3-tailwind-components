@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import DropDown from "./DropDown.molecule.vue";
+import DropDown from "./molecules/DropDown.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

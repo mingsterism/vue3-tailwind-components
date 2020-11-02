@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import DynamicTable from "./DynamicTable.molecule.vue";
+import DynamicTable from "./molecules/DynamicTable.zmolecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

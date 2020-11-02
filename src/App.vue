@@ -32,7 +32,7 @@
   <p class="font-bold my-2 text-2xl">BackNextBtn</p>
   <BackNextBtn />
   <hr />
-  <p class="font-bold my-2 text-2xl">Product Details</p>
+  <p class="font-bold my-2 text-2xl">Partitions</p>
 
 <!-- always use generic terms -->
 <!-- describe the component. Describe the visuals of the component -->
@@ -60,7 +60,7 @@
     />
     <hr />
     <p class="my-4 font-bold text-2xl">Custom Button And Modal</p>
-    <CustomModal
+    <!-- <CustomModal
       confirmBtnText="Confirm"
       cancelBtnText="Cancel"
       customStyle="w-2/5"
@@ -75,7 +75,7 @@
           <p>This is A Modal</p>
         </div>
       </template>
-    </CustomModal>
+    </CustomModal> -->
     <hr />
     <p class="my-4 font-bold text-2xl">DropDown</p>
     <div class="w-1/4 mx-auto h-10 mb-4">
@@ -100,7 +100,7 @@
 
     <hr />
     <p class="my-4 font-bold text-2xl">Info Box</p>
-    <InfoBox :metadata="metadata" title="TestTitle" />
+    <!-- <InfoBox :metadata="metadata" title="TestTitle" /> -->
     <hr />
     <p class="font-bold text-2xl">Flyout Menu</p>
     <FlyoutMenu :submenus="subMenu" />
@@ -117,28 +117,27 @@
 
 <script>
 /* eslint-disable */
-import ProductCard from "./components/ProductCard/ProductCard.vue";
-import SelectSize from "./components/SelectSize/SelectSize.vue";
-import Partitions from "./components/Partitions/Partitions.molecule.vue";
-import BackNextBtn from "./components/BackNextBtn/BackNextBtn.vue";
-import CalculationTable from "./components/CalculationTable/CalculationTable.vue";
-import toggleSwitch from "./components/toggleSwitch/toggleSwitch.vue";
+import ProductCard from "./components/molecules/ProductCard/ProductCard.molecule.vue";
+import SelectSize from "./components/molecules/SelectSize/SelectSize.molecule.vue";
+import Partitions from "./components/molecules/Partitions/Partitions.molecule.vue";
+import BackNextBtn from "./components/molecules/BackNextBtn/BackNextBtn.molecule.vue";
+import CalculationTable from "./components/molecules/CalculationTable/CalculationTable.molecule.vue";
+import toggleSwitch from "./components/molecules/ToggleSwitch/ToggleSwitch.molecule.vue";
 // Importing Molecules
-import DynamicTable from "@/components/molecules/DynamicTable.molecule.vue";
-import CustomInput from "@/components/molecules/CustomInput.molecule.vue";
-import CustomBtn from "@/components/molecules/CustomBtn.molecule.vue";
-import DropDown from "@/components/molecules/DropDown.molecule.vue";
-import Tabs from "@/components/molecules/Tabs.molecule.vue";
-import Uploader from "@/components/molecules/Uploader.molecule.vue";
-import FlyoutMenu from "@/components/molecules/FlyoutMenu.molecule.vue";
-import NavBar from "@/components/molecules/NavBar.molecule.vue";
+import DynamicTable from "./components/molecules/DynamicTable/DynamicTable.molecule.vue";
+import CustomInput from "./components/molecules/CustomInput/CustomInput.molecule.vue";
+import CustomBtn from "./components/molecules/CustomBtn/CustomBtn.molecule.vue";
+import DropDown from "./components/molecules/DropDown/DropDown.molecule.vue";
+import Tabs from "./components/molecules/Tabs/Tabs.molecule.vue";
+import Uploader from "./components/molecules/Uploader/Uploader.molecule.vue";
+import FlyoutMenu from "./components/molecules/FlyoutMenu/FlyoutMenu.molecule.vue";
+import NavBar from "./components/molecules/NavBar/NavBar.molecule.vue";
 // Importing Organisms
-import CustomModal from "@/components/organisms/CustomModal.organism.vue";
-import InfoBox from "@/components/organisms/InfoBox.organism.vue";
-
+import CustomModal from "./components/organisms/CustomModal/CustomModal.organism.vue";
+import InfoBox from "./components/organisms/InfoBox/InfoBox.organism.vue";
 // Mock Data for Table
-import tableData from "@/mockData/dynamic_table_data.json";
-import headersData from "@/mockData/dynamic_table_header.json";
+import tableData from "./mockData/dynamic_table_data.json";
+import headersData from "./mockData/dynamic_table_header.json";
 
 export default {
   name: "App",

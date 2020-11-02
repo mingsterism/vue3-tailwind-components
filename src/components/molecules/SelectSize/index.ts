@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import SelectSize from "./SelectSize.molecule.vue";
+import SelectSize from "./molecules/SelectSize.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

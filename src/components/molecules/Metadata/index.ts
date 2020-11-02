@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import Metadata from "./Metadata.molecule.vue";
+import Metadata from "./molecules/Metadata.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

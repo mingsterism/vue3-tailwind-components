@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import FlyoutMenu from "./FlyoutMenu.molecule.vue";
+import FlyoutMenu from "./molecules/FlyoutMenu.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

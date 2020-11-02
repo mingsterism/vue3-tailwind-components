@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import CustomBtn from "./CustomBtn.molecule.vue";
+import CustomBtn from "./molecules/CustomBtn.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

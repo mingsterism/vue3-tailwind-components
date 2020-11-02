@@ -1,5 +1,5 @@
 import { App as Application } from "vue";
-import Uploader from "./Uploader/molecule.vue";
+import Uploader from "./molecules/Uploader/molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 

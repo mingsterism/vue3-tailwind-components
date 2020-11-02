@@ -14,7 +14,7 @@
         <p
           v-bind:class="{
             paracolor: isActive == item.id,
-            'para-text-red-color': isSellActive
+            'para-text-red-color': isSellActive,
           }"
         >
           {{ item.currencyType }} {{ item.price }}
@@ -46,14 +46,14 @@ export default {
         { name: "US 4", price: 100, currencyType: "RM", id: 1009 },
         { name: "US 4", price: 100, currencyType: "RM", id: 1010 },
         { name: "US 4", price: 100, currencyType: "RM", id: 1011 },
-        { name: "US 4", price: 100, currencyType: "RM", id: 1012 }
-      ]
+        { name: "US 4", price: 100, currencyType: "RM", id: 1012 },
+      ],
     };
   },
   methods: {
     onSelectedSize(id) {
       console.log(id, " selected");
-    }
-  }
+    },
+  },
 };
 </script>

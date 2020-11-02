@@ -1,9 +1,9 @@
 <template>
-  <div class="contaioner">
+  <div class="container">
     <div class="flex flex-wrap -mx-2 overflow-hidden">
       <div
         v-for="item in size"
-        class="cursor-pointer bg-blue text-white m-2 p-2 w-1/4 overflow-hidden"
+        class="cursor-pointer hover:bg-blueHover flex-none bg-blue text-white m-2 p-2 w-1/5 overflow-hidden"
         v-on:click="onSelectedSize(item.id)"
         :key="item.id"
         v-bind:class="{ activeRed: isActive == item.id }"

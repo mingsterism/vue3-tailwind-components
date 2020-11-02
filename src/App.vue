@@ -60,7 +60,7 @@
     />
     <hr />
     <p class="my-4 font-bold text-2xl">Custom Button And Modal</p>
-    <!-- <CustomModal
+    <CustomModal
       confirmBtnText="Confirm"
       cancelBtnText="Cancel"
       customStyle="w-2/5"
@@ -75,7 +75,7 @@
           <p>This is A Modal</p>
         </div>
       </template>
-    </CustomModal> -->
+    </CustomModal>
     <hr />
     <p class="my-4 font-bold text-2xl">DropDown</p>
     <div class="w-1/4 mx-auto h-10 mb-4">
@@ -100,7 +100,7 @@
 
     <hr />
     <p class="my-4 font-bold text-2xl">Info Box</p>
-    <!-- <InfoBox :metadata="metadata" title="TestTitle" /> -->
+    <InfoBox :metadata="metadata" title="TestTitle" />
     <hr />
     <p class="font-bold text-2xl">Flyout Menu</p>
     <FlyoutMenu :submenus="subMenu" />

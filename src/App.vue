@@ -33,6 +33,8 @@
   <hr />
   <p class="font-bold my-2 text-2xl">Product Details</p>
 
+<!-- always use generic terms -->
+<!-- describe the component. Describe the visuals of the component -->
   <ProductDetails
     brand="Nike"
     releaseDate="2017-02-25"
@@ -110,8 +112,7 @@
     <p class="font-bold text-2xl">Respoonsive Navbr</p>
     <NavBar class="mb-20" />
   </div>
-  <hr />
-  CardTitle
+    <h1>CardTitle</h1>
   <CardTitle
     heading="BUY/BID PRODUCT"
     sub-heading="Please choose your billing and shipping method"

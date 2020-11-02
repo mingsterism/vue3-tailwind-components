@@ -9,29 +9,25 @@
     askPrice="1000"
     bidPrice="900"
     currency="RM"
-  /><br />
+  />
   <hr />
-  BillingForm <BillingForm total="250" currency="RM" /><br />
+  SelectSize <SelectSize />
   <hr />
-  SelectSize <SelectSize class="w-1/4" /><br />
-  <hr />
-  BuyBidSelect
-  <BuyBidSelect
-    class="w-1/4"
-    highestBid="10000"
-    lowestAsk="10000"
-    size="10"
+  totalPrice
+  <totalPrice
     currency="RM"
-  /><br />
+    purchasePrice="250"
+    processingFee="0"
+    shippingFee="0"
+    flowType="ASK"
+  />
+
   <hr />
-  SellAskSelect
-  <SellAskSelect
-    class="w-1/4"
-    highestBid="10000"
-    lowestAsk="10000"
-    size="10"
-    currency="RM"
-  /><br />
+  toggleSwitch
+  <toggleSwitch BtnLeft="PLACE BID" BtnRight="BUY NOW" />
+  <hr />
+  BackNextBtn
+  <BackNextBtn />
   <hr />
   ProductDetails
   <ProductDetails
@@ -42,99 +38,34 @@
     shoeStyle="CU6015&#8208;100"
     condition="NEW"
     currency="RM"
-  /><br />
-  <hr />
-  BackNextBtn
-  <BackNextBtn class="w-1/4" />
-  <ReviewPurchase
-    class="w-1/4"
-    product="YEEZY Boost 350 Zebra US 10"
-    details='["New and Unworn","In Original Box","100% Verified Authentic"]'
-    cardType="MasterCard"
-    cardNum="1084"
-    shippingDetails="Subang Jaya, Selangor"
-    currency="RM"
-    purchasePrice="250"
-    processingFee="0"
-    shippingFee="0"
-    buyOrBid="BID"
   />
   <hr />
-  ConfirmPage
-  <ConfirmPage
-    class="w-1/4"
-    product="YEEZY Boost 350 Zebra US 10"
-    questions='["My sneakers are 100% authentic and brand new","My sneakers are undamaged, complete set","I will ship within 2 working days","I agree to Limitd Terms and Conditions."]'
-    cardType="CIMB"
-    cardNum="1084"
-    shippingDetails="Subang Jaya, Selangor"
-    currency="RM"
-    purchasePrice="250"
-    processingFee="0"
-    shippingFee="0"
-    flowType="BID"
-  />
-  <hr />
-  ReviewSale
-  <ReviewSale
-    class="w-1/4"
-    product="YEEZY Boost 350 Zebra US 10"
-    questions='["My sneakers are 100% authentic and brand new","My sneakers are undamaged, complete set","I will ship within 2 working days","I agree to Limitd Terms and Conditions."]'
-    cardType="CIMB"
-    cardNum="1084"
-    shippingDetails="Subang Jaya, Selangor"
-    currency="RM"
-    purchasePrice="250"
-    processingFee="0"
-    shippingFee="0"
-    sellOrAsk="ASK"
-  />
-  <hr />
-  ConfirmPage
-  <ConfirmPage
-    class="w-1/4"
-    product="YEEZY Boost 350 Zebra US 10"
-    questions='["My sneakers are 100% authentic and brand new","My sneakers are undamaged, complete set","I will ship within 2 working days","I agree to Limitd Terms and Conditions."]'
-    cardType="CIMB"
-    cardNum="1084"
-    shippingDetails="Subang Jaya, Selangor"
-    currency="RM"
-    purchasePrice="250"
-    processingFee="0"
-    shippingFee="0"
-    flowType="ASK"
+  CardTitle
+  <CardTitle
+    heading="BUY/BID PRODUCT"
+    sub-heading="Please choose your billing and shipping method"
   />
 </template>
 
 <script>
-// import TestWorld from "./components/testworld/TestWorld.vue";
-// import HelloWorld from "./components/helloworld/HelloWorld.vue";
 import ProductCard from "./components/ProductCard/ProductCard.vue";
-import BillingForm from "./components/BillingForm/BillingForm.vue";
 import SelectSize from "./components/SelectSize/SelectSize.vue";
-import BuyBidSelect from "./components/BuyBidSelect/BuyBidSelect.vue";
-import SellAskSelect from "./components/SellAskSelect/SellAskSelect.vue";
-import ReviewPurchase from "./components/ReviewPurchase/ReviewPurchase.vue";
 import ProductDetails from "./components/ProductDetails/ProductDetails.vue";
-import ReviewSale from "./components/ReviewSale/ReviewSale.vue";
-import ConfirmPage from "./components/ConfirmPage/ConfirmPage.vue";
 import BackNextBtn from "./components/BackNextBtn/BackNextBtn.vue";
+import totalPrice from "./components/totalPrice/totalPrice.vue";
+import toggleSwitch from "./components/toggleSwitch/toggleSwitch.vue";
+import CardTitle from "./components/CardTitle/CardTitle.vue";
 
 export default {
   name: "App",
   components: {
-    // TestWorld,
-    // HelloWorld,
     ProductCard,
-    BillingForm,
     SelectSize,
-    BuyBidSelect,
-    SellAskSelect,
-    ReviewPurchase,
     ProductDetails,
-    ReviewSale,
-    ConfirmPage,
-    BackNextBtn
+    BackNextBtn,
+    totalPrice,
+    toggleSwitch,
+    CardTitle
   }
 };
 </script>

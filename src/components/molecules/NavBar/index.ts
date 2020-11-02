@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import TestWorld from "./TestWorld.molecule.vue";
+import NavBar from "./NavBar.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, TestWorld);
-  }
+    registerComponent(vue, NavBar);
+  },
 };
 
 export default Plugin;
 
-export { TestWorld };
+export { NavBar };

@@ -36,14 +36,9 @@
 
 <!-- always use generic terms -->
 <!-- describe the component. Describe the visuals of the component -->
-  <ProductDetails
-    brand="Nike"
-    releaseDate="2017-02-25"
-    retailPrice="389"
-    colorway="White/University Blue-White"
-    shoeStyle="CU6015&#8208;100"
-    condition="NEW"
-    currency="RM"
+  <Partitions
+    headings='["BRAND","RELEASE DATE","RETAIL PRICE","COLOR WAY","SHOE STYLE","CONDITION","CURRENCY"]'
+    info='["NIKE","2017-02-25","389","White/University Blue-White","CU6015&#8208;100","NEW","RM"]'
   />
   <hr />
   <!--  ADDING SOME MOLECULES AND ORGANIMS FROM ADMIN PANEL -->
@@ -124,7 +119,7 @@
 /* eslint-disable */
 import ProductCard from "./components/ProductCard/ProductCard.vue";
 import SelectSize from "./components/SelectSize/SelectSize.vue";
-import ProductDetails from "./components/ProductDetails/ProductDetails.vue";
+import Partitions from "./components/Partitions/Partitions.molecule.vue";
 import BackNextBtn from "./components/BackNextBtn/BackNextBtn.vue";
 import CalculationTable from "./components/CalculationTable/CalculationTable.vue";
 import toggleSwitch from "./components/toggleSwitch/toggleSwitch.vue";
@@ -150,7 +145,7 @@ export default {
   components: {
     ProductCard,
     SelectSize,
-    ProductDetails,
+    Partitions,
     BackNextBtn,
     CalculationTable,
     toggleSwitch,

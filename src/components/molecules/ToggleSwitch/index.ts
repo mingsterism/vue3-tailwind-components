@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import TestWorld from "./TestWorld.molecule.vue";
+import toggleSwitch from "./toggleSwitch.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, TestWorld);
-  }
+    registerComponent(vue, toggleSwitch);
+  },
 };
 
 export default Plugin;
 
-export { TestWorld };
+export { toggleSwitch };

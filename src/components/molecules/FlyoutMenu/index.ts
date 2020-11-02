@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import TestWorld from "./TestWorld.molecule.vue";
+import FlyoutMenu from "./FlyoutMenu.molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, TestWorld);
-  }
+    registerComponent(vue, FlyoutMenu);
+  },
 };
 
 export default Plugin;
 
-export { TestWorld };
+export { FlyoutMenu };

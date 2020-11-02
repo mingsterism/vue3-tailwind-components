@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-rows-2 bg-gray-200 grid-flow-col rounded-md">
+    <div class="grid grid-rows-2 bg-gray-200 grid-flow-col">
       <div class="row-span-3 border-r-2 border-gray-400">
         <div class="text-md p-10">
           <p>

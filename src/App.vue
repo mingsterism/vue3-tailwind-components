@@ -28,7 +28,6 @@
   <hr />
   BackNextBtn
   <BackNextBtn />
-
   <hr />
   ProductDetails
   <ProductDetails
@@ -40,6 +39,12 @@
     condition="NEW"
     currency="RM"
   />
+  <hr />
+  CardTitle
+  <CardTitle
+    heading="BUY/BID PRODUCT"
+    sub-heading="Please choose your billing and shipping method"
+  />
 </template>
 
 <script>
@@ -49,6 +54,7 @@ import ProductDetails from "./components/ProductDetails/ProductDetails.vue";
 import BackNextBtn from "./components/BackNextBtn/BackNextBtn.vue";
 import totalPrice from "./components/totalPrice/totalPrice.vue";
 import toggleSwitch from "./components/toggleSwitch/toggleSwitch.vue";
+import CardTitle from "./components/CardTitle/CardTitle.vue";
 
 export default {
   name: "App",
@@ -58,7 +64,8 @@ export default {
     ProductDetails,
     BackNextBtn,
     totalPrice,
-    toggleSwitch
+    toggleSwitch,
+    CardTitle
   }
 };
 </script>

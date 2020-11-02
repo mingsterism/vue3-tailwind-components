@@ -1,0 +1,92 @@
+[
+    {
+        "header": "ID",
+        "slotName": "id",
+        "headerStyle": "w-6",
+        "field": [
+            "id"
+        ],
+        "showField": true,
+        "bodyStyle": "w-4 px-1 text-center"
+    },
+    {
+        "header": "Name",
+        "slotName": "Name",
+        "headerStyle": "w-4 px-1",
+        "field": [
+            "name"
+        ],
+        "showField": true,
+        "bodyStyle": "px-1 text-center"
+    },
+    {
+        "header": "Brand",
+        "slotName": "Brand",
+        "headerStyle": "w-6",
+        "field": [
+            "brand"
+        ],
+        "showField": true,
+        "bodyStyle": "px-1 text-center"
+    },
+    {
+        "header": "Category",
+        "slotName": "Category",
+        "headerStyle": "w-4",
+        "field": [
+            "catagory"
+        ],
+        "showField": true,
+        "bodyStyle": "px-1 text-center"
+    },
+    {
+        "header": "ColorWay",
+        "slotName": "ColorWay",
+        "headerStyle": "",
+        "field": [
+            "colorWay"
+        ],
+        "showField": true,
+        "bodyStyle": "w-6 px-1 text-center"
+    },
+    {
+        "header": "Sku",
+        "slotName": "Sku",
+        "headerStyle": "",
+        "field": [
+            "sku"
+        ],
+        "showField": true,
+        "bodyStyle": "w-6 px-1 text-center"
+    },
+    {
+        "header": "ReleaseDate",
+        "slotName": "ReleaseDate",
+        "headerStyle": "",
+        "field": [
+            "releaseDate"
+        ],
+        "showField": true,
+        "bodyStyle": "w-6 px-1 text-center"
+    },
+    {
+        "header": "Description",
+        "slotName": "Description",
+        "headerStyle": "",
+        "field": [
+            "description"
+        ],
+        "showField": true,
+        "bodyStyle": "w-30 px-1 py-1 text-justify"
+    },
+    {
+        "header": "Price",
+        "slotName": "price",
+        "headerStyle": "",
+        "field": [
+            "price"
+        ],
+        "showField": true,
+        "bodyStyle": "w-6 px-1 text-center"
+    }
+]

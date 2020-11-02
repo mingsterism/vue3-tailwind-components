@@ -1,7 +1,7 @@
 module.exports = {
   future: {
-      removeDeprecatedGapUtilities: true,
-      purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
   purge: [],
   // See links below for purgeCss guide
@@ -12,27 +12,43 @@ module.exports = {
   //     './src/**/*.vue',
   // ],
   theme: {
-      extend: {
-          borderWidth: {
-              default: '1px',
-              '0': '0',
-              '1': '1px',
-          },
-          height: {
-              '2/3': '66%',
-              '2/5': '40%',
-              '1/4': '25%',
-              '1/2': '50%'
-          }, 
-          colors:{
-            blue: '#061089',
-            white: '#FFFFFF',
-            black: '#000000'
-        }
-        
+    extend: {
+      borderWidth: {
+        default: '1px',
+        '0': '0',
+        '1': '1px',
       },
-      fontFamily:{
-        'sans': ['"sans"', "sans-serif"]
+      height: {
+        '2/3': '66%',
+        '2/5': '40%',
+        '1/4': '25%',
+        '1/2': '50%'
+      },
+      colors: {
+        blue: '#061089',
+        white: '#FFFFFF',
+        black: '#000000'
+      },
+      spacing: {
+        '7': '1.75rem',
+        '14': '3.5rem',
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '26': '6.5rem',
+        '28': '7rem',
+        '30': '7.5rem',
+        '36': '9rem',
+        '44': '11rem',
+        '52': '13rem',
+        '60': '15rem',
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+      }
+
+    },
+    fontFamily: {
+      'sans': ['"sans"', "sans-serif"]
     }
   },
   variants: {},

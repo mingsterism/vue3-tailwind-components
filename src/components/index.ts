@@ -1,30 +1,30 @@
-import TestWorld from "./molecules/testworld";
+import TestWorld from "./testworld";
 
-import BackNextBtn from "./molecules/BackNextBtn";
-import CalculationTable from "./molecules/CalculationTable";
-import CardTitle from "./molecules/CardTitle";
-import CustomBtn from "./molecules/CustomBtn";
-import CustomInput from "./molecules/CustomInput";
-import DropDown from "./molecules/DropDown";
-import DynamicTable from "./molecules/DynamicTable";
-import FlyoutMenu from "./molecules/FlyoutMenu";
-import Metadata from "./molecules/Metadata";
-import NavBar from "./molecules/NavBar";
+import BackNextBtn from "./BackNextBtn";
+import CalculationTable from "./CalculationTable";
+import CardTitle from "./CardTitle";
+import CustomBtn from "./CustomBtn";
+import CustomInput from "./CustomInput";
+import DropDown from "./DropDown";
+import DynamicTable from "./DynamicTable";
+import FlyoutMenu from "./FlyoutMenu";
+import Metadata from "./Metadata";
+import NavBar from "./NavBar";
 
-import ProductCard from "./molecules/ProductCard";
-import Partitions from "./molecules/Partitions";
-import SelectSize from "./molecules/SelectSize";
-import Tabs from "./molecules/Tabs";
-import ToggleSwitch from "./molecules/ToggleSwitch";
-import Uploader from "./molecules/Uploader";
+import ProductCard from "./ProductCard";
+import Partitions from "./Partitions";
+import SelectSize from "./SelectSize";
+import Tabs from "./Tabs";
+import ToggleSwitch from "./ToggleSwitch";
+import Uploader from "./Uploader";
 
-import CustomModal from "./organisms/CustomModal";
-import InfoBox from "./organisms/InfoBox";
+import CustomModal from "./CustomModal";
+import InfoBox from "./InfoBox";
 
-export { 
-    TestWorld, 
-    CustomModal, 
-    InfoBox, 
+export {
+    TestWorld,
+    CustomModal,
+    InfoBox,
     BackNextBtn,
     CalculationTable,
     CardTitle,

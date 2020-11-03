@@ -1,23 +1,18 @@
 <template>
-  <div class="p-4 border-red-4 max-w-sm rounded overflow-hidden shadow-lg">
-    <img
-      class="w-full"
-      src="../../../assets/Nike-Dunk-High-Michigan.png"
-      alt="Sunset in the mountains"
-    />
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{{ prodName }}</div>
-      <p class="text-gray-700 text-base">
-        {{ description }}
-      </p>
-      <div class="text-xl mb-2">
-        Asking price: {{ currency }} {{ askPrice }}
-      </div>
-      <div class="text-xl mb-2">
-        Bidding price: {{ currency }} {{ bidPrice }}
-      </div>
-    </div>
+  
+  <div class="max-w-sm overflow-hidden bg-gray-100 font-sans">
+  <img class="pb-16 px-4 w-full bg-gray-300" src="../../../assets/Nike-Dunk-High-Michigan.png" alt="Sunset in the mountains">
+  <div class="p-10">
+    <div class="font-bold text-xl mb-2">{{ prodName }}</div>
+    <!-- <p class="text-gray-700 text-base">
+      {{ description }}
+    </p> -->
+    <div class="text-4xl font-bold">{{ currency }} {{ askPrice }}</div>
+    <!-- <div class="text-xl mb-2">Bidding price: {{ currency }} {{ bidPrice }}</div> -->
+
   </div>
+</div>
+
 </template>
 <style scoped>
 @import "@css/main.css";
@@ -29,14 +24,7 @@ export default {
       type: String,
       required: true
     },
-    description: {
-      type: String
-    },
     askPrice: {
-      type: Number,
-      required: true
-    },
-    bidPrice: {
       type: Number,
       required: true
     },

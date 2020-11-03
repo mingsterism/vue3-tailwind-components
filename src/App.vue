@@ -5,9 +5,7 @@
   <p class="font-bold my-2 text-2xl">Product Card</p>
   <ProductCard
     prodName="Nike Air Force 1 Low Travis Scott"
-    description="Condition:New|100% Authentic"
     askPrice="1000"
-    bidPrice="900"
     currency="RM"
   />
   <hr />

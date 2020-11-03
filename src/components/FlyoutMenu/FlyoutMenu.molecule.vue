@@ -60,7 +60,12 @@
 </template>
 
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
   name: "FlyoutMenu",
   data() {
     return {
@@ -72,7 +77,7 @@ export default {
       type: Array,
     },
   },
-};
+});
 </script>
 
 <style scoped>

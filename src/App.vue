@@ -1,24 +1,28 @@
 <template>
   <!-- <HelloWorld/><br>
   <TestWorld/><br> -->
-  whiwiue <hr />
+  <hr />
   <p class="font-bold my-2 text-2xl">Product Card</p>
   <ProductCard
     prodName="Nike Air Force 1 Low Travis Scott"
-    askPrice="1000"
+    :askPrice= 1000
     currency="RM"
+    imgLink="Nike-Dunk-High-Michigan.png"
   />
   <hr />
   <p class="font-bold my-2 text-2xl">Select Size</p>
-  <SelectSize class="w-full mx-auto" />
+  <SelectSize 
+  class="w-full mx-auto" 
+  :size="[{name: 'US 4', price: 100, currencyType: 'RM', id: 1001},{name: 'US 4', price: 100, currencyType: 'RM', id: 1002},{name: 'US 4', price: 100, currencyType: 'RM', id: 1003},{name: 'US 4', price: 100, currencyType: 'RM', id: 1004},{name: 'US 4', price: 100, currencyType: 'RM', id: 1005},{name: 'US 4', price: 100, currencyType: 'RM', id: 1006},{name: 'US 4', price: 100, currencyType: 'RM', id: 1007},{name: 'US 4', price: 100, currencyType: 'RM', id: 1008},{name: 'US 4', price: 100, currencyType: 'RM', id: 1009},{name: 'US 4', price: 100, currencyType: 'RM', id: 1010},{name: 'US 4', price: 100, currencyType: 'RM', id: 1011},{name: 'US 4', price: 100, currencyType: 'RM', id: 1012}]"
+  />
   <hr />
   <p class="font-bold my-2 text-2xl">CalculationTable</p>
   <!-- Rename this as well to refect -->
   <CalculationTable
     currency="RM"
-    purchasePrice="250"
-    processingFee="0"
-    shippingFee="0"
+    :purchasePrice=250
+    :processingFee=0
+    :shippingFee=0
     flowType="ASK"
   />
 
@@ -35,8 +39,8 @@
 <!-- always use generic terms -->
 <!-- describe the component. Describe the visuals of the component -->
   <Partitions
-    headings='["BRAND","RELEASE DATE","RETAIL PRICE","COLOR WAY","SHOE STYLE","CONDITION","CURRENCY"]'
-    info='["NIKE","2017-02-25","389","White/University Blue-White","CU6015&#8208;100","NEW","RM"]'
+    :headings="['BRAND','RELEASE DATE','RETAIL PRICE','COLOR WAY','SHOE STYLE','CONDITION','CURRENCY']"
+    :info="['NIKE','2017-02-25','389','White/University Blue-White','CU6015&#8208;100','NEW','RM']"
   />
   <hr />
   <!--  ADDING SOME MOLECULES AND ORGANIMS FROM ADMIN PANEL -->
@@ -121,6 +125,8 @@ import Partitions from "./components/Partitions/Partitions.molecule.vue";
 import BackNextBtn from "./components/BackNextBtn/BackNextBtn.molecule.vue";
 import CalculationTable from "./components/CalculationTable/CalculationTable.molecule.vue";
 import toggleSwitch from "./components/ToggleSwitch/ToggleSwitch.molecule.vue";
+import CardTitle from "./components/CardTitle/CardTitle.molecule.vue";
+
 // Importing Molecules
 import DynamicTable from "./components/DynamicTable/DynamicTable.molecule.vue";
 import CustomInput from "./components/CustomInput/CustomInput.molecule.vue";
@@ -146,6 +152,7 @@ export default {
     BackNextBtn,
     CalculationTable,
     toggleSwitch,
+    CardTitle,
     // Molecules
     DynamicTable,
     CustomInput,

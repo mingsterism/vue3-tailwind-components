@@ -33,8 +33,13 @@
 import Uploader from "@/components/Uploader/Uploader.molecule.vue";
 import Metadata from "@/components/Metadata/Metadata.molecule.vue";
 
-export default {
-  name: "InfoBox.molecule",
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
+  name: "InfoBox",
   components: {
     Metadata,
     Uploader,
@@ -74,7 +79,7 @@ export default {
       this.imageUrl = "https://via.placeholder.com/150";
     },
   },
-};
+});
 </script>
 
 <style scoped>

@@ -18,7 +18,14 @@
 @import "@css/main.css";
 </style>
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+import { BackNextBtn } from '.';
+
+export default defineComponent({
+  name: "BackNextBtn",
   props: {},
   methods: {
     next() {
@@ -28,5 +35,5 @@ export default {
       console.log("back");
     }
   }
-};
+});
 </script>

@@ -10,7 +10,12 @@
 </template>
 
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
   name: "Uploader",
   props: {
     image: {
@@ -46,7 +51,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 
 <style scoped>

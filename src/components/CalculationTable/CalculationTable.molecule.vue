@@ -40,7 +40,14 @@
 @import "@css/main.css";
 </style>
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+import { CalculationTable } from '.';
+
+export default defineComponent({
+  name: "CalculationTable",
   props: {
     currency: {
       type: String,
@@ -75,5 +82,5 @@ export default {
       return JSON.parse(this.questions);
     }
   }
-};
+});
 </script>

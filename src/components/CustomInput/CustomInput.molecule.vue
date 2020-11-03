@@ -13,7 +13,12 @@
   </div>
 </template>
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
   name: "CustomInput",
   props: {
     inputType: {
@@ -54,7 +59,7 @@ export default {
   // });
   // },
   // },
-};
+});
 </script>
 <style scoped>
 @import "@css/main.css";

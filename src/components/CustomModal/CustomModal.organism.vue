@@ -52,7 +52,12 @@
 
 import CustomBtn from "@/components/CustomBtn/CustomBtn.molecule.vue";
 
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
   name: "CustomModal",
   components: {
     CustomBtn,
@@ -84,7 +89,7 @@ export default {
     // this.$emit("closeModal");
     // },
   },
-};
+});
 </script>
 <style scoped>
 @import "@css/main.css";

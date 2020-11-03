@@ -63,7 +63,12 @@
 </template>
 <script>
 /* eslint-disable */
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
   name: "DynamicTable",
   props: {
     headers: {
@@ -165,7 +170,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 <style scoped>
 @import "@css/main.css";

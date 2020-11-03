@@ -9,7 +9,14 @@
 </template>
    
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+import { CustomBtn } from '.';
+
+export default defineComponent({
+  name: "CustomBtn",
   props: {
     btnTxt: {
       type: String,
@@ -23,7 +30,7 @@ export default {
   data() {
     return {};
   },
-};
+});
 </script>
 
 <style scoped>

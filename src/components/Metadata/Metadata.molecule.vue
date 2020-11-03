@@ -6,8 +6,13 @@
 </template>
 
 <script>
-export default {
-  name: "Metadata.molecule",
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
+  name: "Metadata",
   props: {
     primaryText: {
       type: String,
@@ -17,7 +22,7 @@ export default {
       type: String
     }
   }
-}
+})
 </script>
 
 <style scoped>

@@ -181,8 +181,13 @@
 </template>
 
 <script>
-export default {
-  name: "ResponsiveNavBar.molecule",
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
+  name: "ResponsiveNavBar",
   data() {
     return {
       open: false,
@@ -197,7 +202,7 @@ export default {
       console.log("CLICK AWAY");
     },
   },
-};
+});
 </script>
 
 <style scoped>

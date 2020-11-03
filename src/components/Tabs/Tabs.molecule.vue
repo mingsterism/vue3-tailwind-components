@@ -19,8 +19,13 @@
 
 <script>
 /* eslint-disable */
-export default {
-  name: "Tabs.molecule",
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
+  name: "Tabs",
   data() {
     return {
       selectedTabName: "",
@@ -45,7 +50,7 @@ export default {
     //   this.$emit("deleteTab", index);
     // },
   },
-};
+});
 </script>
 
 <style scoped>

@@ -12,7 +12,14 @@
 @import "@css/main.css";
 </style>
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+import { CardTitle } from '.';
+
+export default defineComponent({
+  name: "CardTitle",
   props: {
     heading: {
       type: String,
@@ -22,5 +29,5 @@ export default {
       type: String
     }
   }
-};
+});
 </script>

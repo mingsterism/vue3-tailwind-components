@@ -49,10 +49,12 @@ export default defineComponent({
   },
   props: {
     BtnLeft: {
-      type: Number
+      type: String,
+      required: true
+
     },
     BtnRight: {
-      type: Number,
+      type: String,
       required: true
     }
   },

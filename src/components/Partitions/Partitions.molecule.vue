@@ -30,7 +30,14 @@
 @import "@css/main.css";
 </style>
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+import { Partitions } from '.';
+
+export default defineComponent({
+  name: "Partitions",
   props: {
     headings: {
       type: Array,
@@ -41,11 +48,11 @@ export default {
   },
   computed:{
     headingsArray: function(){
-      return JSON.parse(this.headings)
+      return this.headings
     },
     infoArray: function(){
-      return JSON.parse(this.info)
+      return this.info
     }
   }
-};
+});
 </script>

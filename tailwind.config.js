@@ -27,7 +27,9 @@ module.exports = {
       colors: {
         blue: '#061089',
         white: '#FFFFFF',
-        black: '#000000'
+        black: '#000000',
+        limitdGray: '#ededed',
+        limitdLightGray: '#fafafa',
       },
       spacing: {
         '7': '1.75rem',

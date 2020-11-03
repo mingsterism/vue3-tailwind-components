@@ -37,7 +37,14 @@
 <script>
 /* eslint-disable */
 
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+import { DropDown } from '.';
+
+export default defineComponent({
+  name: "DropDown",
   props: {
     customStyle: {
       type: String,
@@ -68,7 +75,7 @@ export default {
       this.$emit("select", item);
     },
   },
-};
+});
 </script>
 <style scoped>
 @import "@css/main.css";

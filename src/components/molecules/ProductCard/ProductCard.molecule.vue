@@ -1,7 +1,7 @@
 <template>
   
   <div class="max-w-sm overflow-hidden bg-gray-100 font-sans">
-  <img class="pb-16 px-4 w-full bg-gray-300" src="../../../assets/Nike-Dunk-High-Michigan.png" alt="Sunset in the mountains">
+  <img class="pb-16 px-4 w-full bg-gray-300" :src="require('@/assets/' + imgLink + '')" alt="Sunset in the mountains">
   <div class="p-10">
     <div class="font-bold text-xl mb-2">{{ prodName }}</div>
     <!-- <p class="text-gray-700 text-base">
@@ -31,6 +31,9 @@ export default {
     currency: {
       type: String,
       required: true
+    },
+    imgLink: {
+       type: String
     }
   }
 };

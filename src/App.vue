@@ -7,6 +7,7 @@
     prodName="Nike Air Force 1 Low Travis Scott"
     askPrice="1000"
     currency="RM"
+    imgLink="Nike-Dunk-High-Michigan.png"
   />
   <hr />
   <p class="font-bold my-2 text-2xl">Select Size</p>

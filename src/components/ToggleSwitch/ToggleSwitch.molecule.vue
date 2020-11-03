@@ -1,29 +1,29 @@
 <template>
   <div>
-    <div v-if="activeBtnRight" class="flex flex-wrap overflow-hidden">
+    <div class="flex flex-wrap overflow-hidden" v-if="activeBtnRight">
       <button
-        @click="onLeftHandler"
-        class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
+          @click="onLeftHandler"
+          class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
       >
         {{ BtnLeft }}
       </button>
       <button
-        @click="onRightHandler"
-        class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 border-b-4 border-blue w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
+          @click="onRightHandler"
+          class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 border-b-4 border-blue w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
       >
         {{ BtnRight }}
       </button>
     </div>
-    <div v-if="activeBtnLeft" class="flex flex-wrap overflow-hidden">
+    <div class="flex flex-wrap overflow-hidden" v-if="activeBtnLeft">
       <button
-        @click="onLeftHandler"
-        class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 border-b-4 border-blue w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
+          @click="onLeftHandler"
+          class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 border-b-4 border-blue w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
       >
         {{ BtnLeft }}
       </button>
       <button
-        @click="onRightHandler"
-        class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
+          @click="onRightHandler"
+          class="border-2 h-12 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 w-1/2 overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
       >
         {{ BtnRight }}
       </button>
@@ -34,7 +34,13 @@
 @import "@css/main.css";
 </style>
 <script>
-export default {
+import {
+  defineComponent,
+  ref
+} from 'vue';
+
+export default defineComponent({
+  name: "ToggleSwitch",
   data() {
     return {
       activeBtnLeft: false,
@@ -62,5 +68,5 @@ export default {
       this.activeBtnLeft = false;
     }
   }
-};
+});
 </script>

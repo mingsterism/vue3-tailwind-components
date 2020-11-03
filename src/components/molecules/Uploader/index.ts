@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import BackNextBtn from "./molecules/BackNextBtn.molecule.vue";
+import Uploader from "./molecules/Uploader/molecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, BackNextBtn);
+    registerComponent(vue, Uploader);
   },
 };
 
 export default Plugin;
 
-export { BackNextBtn };
+export { Uploader };

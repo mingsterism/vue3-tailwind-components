@@ -13,7 +13,7 @@
       >
         <img
           class="h-3 w-3 transform rotate-90"
-          src="../../assets/vector.png"
+          src="../../../assets/vector.png"
           alt="Vector"
         />
       </div>

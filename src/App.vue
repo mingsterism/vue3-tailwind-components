@@ -5,9 +5,7 @@
   <p class="font-bold my-2 text-2xl">Product Card</p>
   <ProductCard
     prodName="Nike Air Force 1 Low Travis Scott"
-    description="Condition:New|100% Authentic"
     askPrice="1000"
-    bidPrice="900"
     currency="RM"
   />
   <hr />
@@ -32,18 +30,13 @@
   <p class="font-bold my-2 text-2xl">BackNextBtn</p>
   <BackNextBtn />
   <hr />
-  <p class="font-bold my-2 text-2xl">Product Details</p>
+  <p class="font-bold my-2 text-2xl">Partitions</p>
 
 <!-- always use generic terms -->
 <!-- describe the component. Describe the visuals of the component -->
-  <ProductDetails
-    brand="Nike"
-    releaseDate="2017-02-25"
-    retailPrice="389"
-    colorway="White/University Blue-White"
-    shoeStyle="CU6015&#8208;100"
-    condition="NEW"
-    currency="RM"
+  <Partitions
+    headings='["BRAND","RELEASE DATE","RETAIL PRICE","COLOR WAY","SHOE STYLE","CONDITION","CURRENCY"]'
+    info='["NIKE","2017-02-25","389","White/University Blue-White","CU6015&#8208;100","NEW","RM"]'
   />
   <hr />
   <!--  ADDING SOME MOLECULES AND ORGANIMS FROM ADMIN PANEL -->
@@ -122,35 +115,34 @@
 
 <script>
 /* eslint-disable */
-import ProductCard from "./components/ProductCard/ProductCard.vue";
-import SelectSize from "./components/SelectSize/SelectSize.vue";
-import ProductDetails from "./components/ProductDetails/ProductDetails.vue";
-import BackNextBtn from "./components/BackNextBtn/BackNextBtn.vue";
-import CalculationTable from "./components/CalculationTable/CalculationTable.vue";
-import toggleSwitch from "./components/toggleSwitch/toggleSwitch.vue";
+import ProductCard from "./components/molecules/ProductCard/ProductCard.molecule.vue";
+import SelectSize from "./components/molecules/SelectSize/SelectSize.molecule.vue";
+import Partitions from "./components/molecules/Partitions/Partitions.molecule.vue";
+import BackNextBtn from "./components/molecules/BackNextBtn/BackNextBtn.molecule.vue";
+import CalculationTable from "./components/molecules/CalculationTable/CalculationTable.molecule.vue";
+import toggleSwitch from "./components/molecules/ToggleSwitch/ToggleSwitch.molecule.vue";
 // Importing Molecules
-import DynamicTable from "@/components/molecules/DynamicTable.molecule.vue";
-import CustomInput from "@/components/molecules/CustomInput.molecule.vue";
-import CustomBtn from "@/components/molecules/CustomBtn.molecule.vue";
-import DropDown from "@/components/molecules/DropDown.molecule.vue";
-import Tabs from "@/components/molecules/Tabs.molecule.vue";
-import Uploader from "@/components/molecules/Uploader.molecule.vue";
-import FlyoutMenu from "@/components/molecules/FlyoutMenu.molecule.vue";
-import NavBar from "@/components/molecules/NavBar.molecule.vue";
+import DynamicTable from "./components/molecules/DynamicTable/DynamicTable.molecule.vue";
+import CustomInput from "./components/molecules/CustomInput/CustomInput.molecule.vue";
+import CustomBtn from "./components/molecules/CustomBtn/CustomBtn.molecule.vue";
+import DropDown from "./components/molecules/DropDown/DropDown.molecule.vue";
+import Tabs from "./components/molecules/Tabs/Tabs.molecule.vue";
+import Uploader from "./components/molecules/Uploader/Uploader.molecule.vue";
+import FlyoutMenu from "./components/molecules/FlyoutMenu/FlyoutMenu.molecule.vue";
+import NavBar from "./components/molecules/NavBar/NavBar.molecule.vue";
 // Importing Organisms
-import CustomModal from "@/components/organisms/CustomModal.organism.vue";
-import InfoBox from "@/components/organisms/InfoBox.organism.vue";
-
+import CustomModal from "./components/organisms/CustomModal/CustomModal.organism.vue";
+import InfoBox from "./components/organisms/InfoBox/InfoBox.organism.vue";
 // Mock Data for Table
-import tableData from "@/mockData/dynamic_table_data.json";
-import headersData from "@/mockData/dynamic_table_header.json";
+import tableData from "./mockData/dynamic_table_data.json";
+import headersData from "./mockData/dynamic_table_header.json";
 
 export default {
   name: "App",
   components: {
     ProductCard,
     SelectSize,
-    ProductDetails,
+    Partitions,
     BackNextBtn,
     CalculationTable,
     toggleSwitch,

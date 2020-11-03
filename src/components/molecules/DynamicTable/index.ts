@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import BackNextBtn from "./molecules/BackNextBtn.molecule.vue";
+import DynamicTable from "./molecules/DynamicTable.zmolecule.vue";
 
 import { registerComponent } from "../../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, BackNextBtn);
+    registerComponent(vue, DynamicTable);
   },
 };
 
 export default Plugin;
 
-export { BackNextBtn };
+export { DynamicTable };

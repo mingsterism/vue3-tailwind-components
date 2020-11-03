@@ -23,6 +23,7 @@
     "build:js_css": "rimraf dist && cross-env NODE_ENV=production SEP_CSS=true rollup --config rollup.config.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "core-js": "^3.6.5",
     "tailwindcss": "^1.9.6",
     "vue": "^3.0.0"

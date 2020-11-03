@@ -1,7 +1,7 @@
 import { App as Application } from "vue";
-import TestWorld from "./TestWorld.vue";
+import TestWorld from "./molecules/TestWorld.molecule.vue";
 
-import { registerComponent } from "./../../utils/plugins/index";
+import { registerComponent } from "../../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {

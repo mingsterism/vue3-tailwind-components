@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import Uploader from "@/components/molecules/Uploader/Uploader.molecule.vue";
-import Metadata from "@/components/molecules/Metadata/Metadata.molecule.vue";
+import Uploader from "@/components/Uploader/Uploader.molecule.vue";
+import Metadata from "@/components/Metadata/Metadata.molecule.vue";
 
 export default {
   name: "InfoBox.molecule",

@@ -115,24 +115,24 @@
 
 <script>
 /* eslint-disable */
-import ProductCard from "./components/molecules/ProductCard/ProductCard.molecule.vue";
-import SelectSize from "./components/molecules/SelectSize/SelectSize.molecule.vue";
-import Partitions from "./components/molecules/Partitions/Partitions.molecule.vue";
-import BackNextBtn from "./components/molecules/BackNextBtn/BackNextBtn.molecule.vue";
-import CalculationTable from "./components/molecules/CalculationTable/CalculationTable.molecule.vue";
-import toggleSwitch from "./components/molecules/ToggleSwitch/ToggleSwitch.molecule.vue";
+import ProductCard from "./components/ProductCard/ProductCard.molecule.vue";
+import SelectSize from "./components/SelectSize/SelectSize.molecule.vue";
+import Partitions from "./components/Partitions/Partitions.molecule.vue";
+import BackNextBtn from "./components/BackNextBtn/BackNextBtn.molecule.vue";
+import CalculationTable from "./components/CalculationTable/CalculationTable.molecule.vue";
+import toggleSwitch from "./components/ToggleSwitch/ToggleSwitch.molecule.vue";
 // Importing Molecules
-import DynamicTable from "./components/molecules/DynamicTable/DynamicTable.molecule.vue";
-import CustomInput from "./components/molecules/CustomInput/CustomInput.molecule.vue";
-import CustomBtn from "./components/molecules/CustomBtn/CustomBtn.molecule.vue";
-import DropDown from "./components/molecules/DropDown/DropDown.molecule.vue";
-import Tabs from "./components/molecules/Tabs/Tabs.molecule.vue";
-import Uploader from "./components/molecules/Uploader/Uploader.molecule.vue";
-import FlyoutMenu from "./components/molecules/FlyoutMenu/FlyoutMenu.molecule.vue";
-import NavBar from "./components/molecules/NavBar/NavBar.molecule.vue";
+import DynamicTable from "./components/DynamicTable/DynamicTable.molecule.vue";
+import CustomInput from "./components/CustomInput/CustomInput.molecule.vue";
+import CustomBtn from "./components/CustomBtn/CustomBtn.molecule.vue";
+import DropDown from "./components/DropDown/DropDown.molecule.vue";
+import Tabs from "./components/Tabs/Tabs.molecule.vue";
+import Uploader from "./components/Uploader/Uploader.molecule.vue";
+import FlyoutMenu from "./components/FlyoutMenu/FlyoutMenu.molecule.vue";
+import NavBar from "./components/NavBar/NavBar.molecule.vue";
 // Importing Organisms
-import CustomModal from "./components/organisms/CustomModal/CustomModal.organism.vue";
-import InfoBox from "./components/organisms/InfoBox/InfoBox.organism.vue";
+import CustomModal from "./components/CustomModal/CustomModal.organism.vue";
+import InfoBox from "./components/InfoBox/InfoBox.organism.vue";
 // Mock Data for Table
 import tableData from "./mockData/dynamic_table_data.json";
 import headersData from "./mockData/dynamic_table_header.json";

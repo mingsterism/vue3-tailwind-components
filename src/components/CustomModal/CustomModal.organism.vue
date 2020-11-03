@@ -50,7 +50,7 @@
 <script>
 /* eslint-disable */
 
-import CustomBtn from "@/components/molecules/CustomBtn/CustomBtn.molecule.vue";
+import CustomBtn from "@/components/CustomBtn/CustomBtn.molecule.vue";
 
 export default {
   name: "CustomModal",

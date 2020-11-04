@@ -54,7 +54,7 @@ import CustomBtn from "@/components/CustomBtn/CustomBtn.molecule.vue";
 
 import {
   defineComponent,
-  ref
+  
 } from 'vue';
 
 export default defineComponent({

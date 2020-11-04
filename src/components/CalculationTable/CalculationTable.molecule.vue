@@ -43,9 +43,8 @@
 <script>
 import {
   defineComponent,
-  ref
+  
 } from 'vue';
-import { CalculationTable } from '.';
 
 export default defineComponent({
   name: "CalculationTable",

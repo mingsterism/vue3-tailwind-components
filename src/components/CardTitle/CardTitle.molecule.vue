@@ -14,9 +14,8 @@
 <script>
 import {
   defineComponent,
-  ref
+  
 } from 'vue';
-import { CardTitle } from '.';
 
 export default defineComponent({
   name: "CardTitle",

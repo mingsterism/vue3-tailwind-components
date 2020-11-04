@@ -11,9 +11,11 @@
   />
   <hr />
   <p class="font-bold my-2 text-2xl">Select Size</p>
-  <SelectSize 
+  <SelectSize
+  @sizeSelect="handleSelectSize"
+  customStyle=" text"
   class="w-full mx-auto" 
-  :size="[{name: 'US 4', price: 100, currencyType: 'RM', id: 1001},{name: 'US 4', price: 100, currencyType: 'RM', id: 1002},{name: 'US 4', price: 100, currencyType: 'RM', id: 1003},{name: 'US 4', price: 100, currencyType: 'RM', id: 1004},{name: 'US 4', price: 100, currencyType: 'RM', id: 1005},{name: 'US 4', price: 100, currencyType: 'RM', id: 1006},{name: 'US 4', price: 100, currencyType: 'RM', id: 1007},{name: 'US 4', price: 100, currencyType: 'RM', id: 1008},{name: 'US 4', price: 100, currencyType: 'RM', id: 1009},{name: 'US 4', price: 100, currencyType: 'RM', id: 1010},{name: 'US 4', price: 100, currencyType: 'RM', id: 1011},{name: 'US 4', price: 100, currencyType: 'RM', id: 1012}]"
+  :size="[{name: 'US 4', price: 100, currencyType: 'RM', id: 1013},{name: 'US 4', price: 100, currencyType: 'RM', id: 1014},{name: 'US 4', price: 100, currencyType: 'RM', id: 1015},{name: 'US 4', price: 100, currencyType: 'RM', id: 1016},{name: 'US 4', price: 100, currencyType: 'RM', id: 1001},{name: 'US 4', price: 100, currencyType: 'RM', id: 1002},{name: 'US 4', price: 100, currencyType: 'RM', id: 1003},{name: 'US 4', price: 100, currencyType: 'RM', id: 1004},{name: 'US 4', price: 100, currencyType: 'RM', id: 1005},{name: 'US 4', price: 100, currencyType: 'RM', id: 1006},{name: 'US 4', price: 100, currencyType: 'RM', id: 1007},{name: 'US 4', price: 100, currencyType: 'RM', id: 1008},{name: 'US 4', price: 100, currencyType: 'RM', id: 1009},{name: 'US 4', price: 100, currencyType: 'RM', id: 1010},{name: 'US 4', price: 100, currencyType: 'RM', id: 1011},{name: 'US 4', price: 100, currencyType: 'RM', id: 1012}]"
   />
   <hr />
   <p class="font-bold my-2 text-2xl">CalculationTable</p>
@@ -29,10 +31,19 @@
   <hr />
 
   <p class="font-bold my-2 text-2xl">Toggle Switch</p>
-  <toggleSwitch BtnLeft="PLACE BID" BtnRight="BUY NOW" />
+  <toggleSwitch 
+    BtnLeft="PLACE BID"
+    BtnRight="BUY NOW" 
+    @onBtnLeft="handleBtnLeft"
+    @onBtnRight="handleBtnRight"
+  />
   <hr />
   <p class="font-bold my-2 text-2xl">BackNextBtn</p>
-  <BackNextBtn />
+  <BackNextBtn 
+    @nextBtn="handleNext"
+    @backBtn="handleBack"
+
+  />
   <hr />
   <p class="font-bold my-2 text-2xl">Partitions</p>
 
@@ -199,6 +210,22 @@ export default {
     handleSelect(tabName) {
       this.selectedTab = tabName;
     },
+    handleNext(){
+      console.log('NEXT pressed')
+    },
+    handleBack(){
+      console.log('BACK pressed')
+    },
+    handleSelectSize(id){
+      console.log(id, 'size selected')
+    },
+    handleBtnRight(){
+      console.log('Right btn')
+    },
+    handleBtnLeft(){
+      console.log('Left btn')
+
+    }
   },
 };
 </script>

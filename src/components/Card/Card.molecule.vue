@@ -22,10 +22,10 @@ import {
   defineComponent,
   ref
 } from 'vue';
-import { ProductCard } from '.';
+import { Card } from '.';
 
 export default defineComponent({
-  name: "ProductCard",
+  name: "Card",
   props: {
     primaryText: {
       type: String,

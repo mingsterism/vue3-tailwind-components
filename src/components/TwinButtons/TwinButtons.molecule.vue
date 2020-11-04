@@ -29,7 +29,7 @@ import {
 import { BackNextBtn } from '.';
 
 export default defineComponent({
-  name: "BackNextBtn",
+  name: "TwinButtons",
   props: {},
   methods: {
     next() {

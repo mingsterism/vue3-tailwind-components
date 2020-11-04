@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <div class="flex flex-wrap -mx-2 overflow-hidden">
+    <div class="flex flex-wrap -mx-2">
       <div
           :key="item.id"
-          class="cursor-pointer box-border border-gray-700 flex-none m-2 p-2 w-1/5 overflow-hidden"
-          :class="clicked == item.id?'customStyle cursor-pointer m-2 p-2 w-1/5 overflow-hidden bg-blue text-white border-2':'cursor-pointer border-2 box-border border-gray-700 flex-none m-2 p-2 w-1/5 overflow-hidden'"
+          class="cursor-pointer box-border border-gray-700 m-2 p-2 w-1/5"
+          :class="clicked == item.id?'cursor-pointer m-2 p-2 w-1/5 bg-blue text-white border-2':'cursor-pointer border-2 box-border border-gray-700 flex-none m-2 p-2 w-1/5'"
           v-for="item in sizeArray"
           v-on:click="onSelectedSize(item.id)"
       >
@@ -29,7 +29,7 @@ import {
 } from 'vue';
 
 export default defineComponent({
-  name: "SelectSize",
+  name: "Selector",
   props: {
     size:{
       type: Array,

@@ -6,7 +6,7 @@
   <Card
     primaryText="Nike Air Force 1 Low Travis Scott"
     secondaryText="RM 1000"
-    imgLink="Nike-Dunk-High-Michigan.png"
+    imgLink="/img/Nike-Dunk-High-Michigan.7216be23.png"
   />
   <hr />
   <p class="font-bold my-2 text-2xl">Select Size</p>

@@ -32,7 +32,11 @@
   <toggleSwitch BtnLeft="PLACE BID" BtnRight="BUY NOW" />
   <hr />
   <p class="font-bold my-2 text-2xl">BackNextBtn</p>
-  <BackNextBtn />
+  <BackNextBtn 
+    @nextBtn="handleNext"
+    @backBtn="handleBack"
+
+  />
   <hr />
   <p class="font-bold my-2 text-2xl">Partitions</p>
 
@@ -199,6 +203,12 @@ export default {
     handleSelect(tabName) {
       this.selectedTab = tabName;
     },
+    handleNext(){
+      console.log('NEXT pressed')
+    },
+    handleBack(){
+      console.log('BACK pressed')
+    }
   },
 };
 </script>

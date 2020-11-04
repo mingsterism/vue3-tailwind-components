@@ -3,7 +3,8 @@
     <div class="flex flex-wrap -mx-2 overflow-hidden">
       <div
           :key="item.id"
-          class="cursor-pointer hover:bg-blueHover flex-none bg-blue text-white m-2 p-2 w-1/5 overflow-hidden"
+          :class="customStyle"
+          class="cursor-pointer hover:bg-blueHover flex-none bg-blue hover:bg-hoverBlue text-white m-2 p-2 w-1/5 overflow-hidden"
           v-bind:class="{ activeRed: isActive == item.id }"
           v-for="item in sizeArray"
           v-on:click="onSelectedSize(item.id)"
@@ -53,7 +54,10 @@ export default defineComponent({
   computed:{
     sizeArray: function(){
       return this.size
-    }
+    },
+    customStyle: {
+      type: String,
+    },
   }
 });
 </script>

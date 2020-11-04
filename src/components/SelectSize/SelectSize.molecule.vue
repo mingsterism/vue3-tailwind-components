@@ -3,20 +3,15 @@
     <div class="flex flex-wrap -mx-2 overflow-hidden">
       <div
           :key="item.id"
-          :class="customStyle"
-          class="cursor-pointer hover:bg-blueHover flex-none bg-blue hover:bg-hoverBlue text-white m-2 p-2 w-1/5 overflow-hidden"
-          v-bind:class="{ activeRed: isActive == item.id }"
+          class="cursor-pointer box-border border-gray-700 flex-none m-2 p-2 w-1/5 overflow-hidden"
+          :class="clicked == item.id?'customStyle cursor-pointer m-2 p-2 w-1/5 overflow-hidden bg-blue text-white border-2':'cursor-pointer border-2 box-border border-gray-700 flex-none m-2 p-2 w-1/5 overflow-hidden'"
           v-for="item in sizeArray"
           v-on:click="onSelectedSize(item.id)"
       >
-        <p v-bind:class="{ paracolor: isActive == item.id }">
+        <p class="font-extrabold">
           {{ item.name }}
         </p>
-        <p
-            v-bind:class="{
-            paracolor: isActive == item.id,
-          }"
-        >
+        <p>
           {{ item.currencyType }} {{ item.price }}
         </p>
       </div>
@@ -43,21 +38,33 @@ export default defineComponent({
   },
   data() {
     return {
-      isActive: null,
+      clicked: null,
+      baseStyles: {
+        fontWeight:'800',
+        color: 'red'
+      },
+      overrideStyles: {
+        color:'blue'
+      },
+      customStyle: {
+      type: String,
+    },
     };
   },
   methods: {
     onSelectedSize(id) {
       console.log(id, "selected");
+      this.clicked = id
+      this.$emit("sizeSelect", id);
+
     },
   },
   computed:{
     sizeArray: function(){
-      return this.size
-    },
-    customStyle: {
-      type: String,
-    },
+      let sizeArr = this.size
+      this.clicked = sizeArr[0].id
+      return sizeArr
+    }
   }
 });
 </script>

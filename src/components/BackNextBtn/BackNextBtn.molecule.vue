@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex px-3">
+    <div class="flex">
       <button
         class="w-1/2 border-2 h-12 hover:bg-gray-300 bg-gray-200 text-black font-bold"
         @click="back()"

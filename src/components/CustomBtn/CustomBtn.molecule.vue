@@ -10,10 +10,8 @@
    
 <script>
 import {
-  defineComponent,
-  ref
+  defineComponent  
 } from 'vue';
-import { CustomBtn } from '.';
 
 export default defineComponent({
   name: "CustomBtn",

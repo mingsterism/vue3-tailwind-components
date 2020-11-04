@@ -24,9 +24,8 @@
 <script>
 import {
   defineComponent,
-  ref
+  
 } from 'vue';
-import { BackNextBtn } from '.';
 
 export default defineComponent({
   name: "TwinButtons",

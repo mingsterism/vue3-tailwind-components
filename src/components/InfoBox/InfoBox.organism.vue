@@ -35,7 +35,7 @@ import Metadata from "@/components/Metadata/Metadata.molecule.vue";
 
 import {
   defineComponent,
-  ref
+  
 } from 'vue';
 
 export default defineComponent({

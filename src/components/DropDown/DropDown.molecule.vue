@@ -39,9 +39,8 @@
 
 import {
   defineComponent,
-  ref
+  
 } from 'vue';
-import { DropDown } from '.';
 
 export default defineComponent({
   name: "DropDown",

@@ -1,7 +1,8 @@
 <template>
 
   <div class="max-w-sm overflow-hidden bg-limitdLightGray">
-  <img class="pb-16 px-4 w-full bg-limitdGray" v-bind:src=" imgLink" alt="Sunset in the mountains">
+     
+  <img class="pb-16 px-4 w-full bg-limitdGray" src="@/assets/Nike-Dunk-High-Michigan.png" alt="Sunset in the mountains">
   <div class="p-10">
     <div class="font-sans text-lg mb-2">{{ primaryText }}</div>
     <!-- <p class="text-gray-700 text-base">
@@ -20,9 +21,9 @@
 <script>
 import {
   defineComponent,
-  ref
+  
 } from 'vue';
-import { Card } from '.';
+// import { Card } from '.';
 
 export default defineComponent({
   name: "Card",

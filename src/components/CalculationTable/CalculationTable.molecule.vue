@@ -6,14 +6,15 @@
         >
           {{ product }}
         </div> -->
-      <div class="w-1/2 overflow-hidden font-bold text-left p-4">
-        <p>Your {{ flowType }} Price</p>
-      </div>
-      <div class="w-1/2 overflow-hidden font-bold text-right p-4">
-        {{ currency }}&nbsp;{{ purchasePrice }}
-      </div>
-
-      <div class="w-1/2 overflow-hidden font-bold text-left p-4">
+      <template class="w-full" v-for="item in data" :key="item.name">
+        <div class="w-1/2 overflow-hidden font-bold text-left p-4">
+          <p>{{ item.name }}</p>
+        </div>
+        <div class="w-1/2 overflow-hidden font-bold text-right p-4">
+          {{ currency }}&nbsp;{{ item.price }}
+        </div>
+      </template>
+      <!-- <div class="w-1/2 overflow-hidden font-bold text-left p-4">
         <p>Processing Fee</p>
       </div>
       <div class="w-1/2 overflow-hidden font-bold text-right p-4">
@@ -25,7 +26,7 @@
       </div>
       <div class="w-1/2 overflow-hidden font-bold text-right p-4">
         {{ currency }}&nbsp;{{ shippingFee }}
-      </div>
+      </div> -->
 
       <div class="w-1/2 overflow-hidden text-left p-4">
         <p class="font-extrabold">TOTAL</p>
@@ -49,23 +50,11 @@ import { CalculationTable } from '.';
 export default defineComponent({
   name: "CalculationTable",
   props: {
+    data:{
+      type: Array,
+      required: true
+    },
     currency: {
-      type: String,
-      required: true
-    },
-    purchasePrice: {
-      type: Number,
-      required: true
-    },
-    processingFee: {
-      type: Number,
-      required: true
-    },
-    shippingFee: {
-      type: Number,
-      required: true
-    },
-    flowType: {
       type: String,
       required: true
     }
@@ -73,13 +62,8 @@ export default defineComponent({
   computed: {
     total() {
       return (
-        Number(this.purchasePrice) +
-        Number(this.processingFee) +
-        Number(this.shippingFee)
+        this.data.reduce((a, ele) => a + ele.price, 0)
       );
-    },
-    detailsList() {
-      return JSON.parse(this.questions);
     }
   }
 });

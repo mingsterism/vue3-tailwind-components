@@ -2,17 +2,16 @@
   <!-- <HelloWorld/><br>
   <TestWorld/><br> -->
   <hr />
-  <p class="font-bold my-2 text-2xl">Product Card</p>
-  <ProductCard
-    prodName="Nike Air Force 1 Low Travis Scott"
-    :askPrice= 1000
-    currency="RM"
+  <p class="font-bold my-2 text-2xl">Card</p>
+  <Card
+    primaryText="Nike Air Force 1 Low Travis Scott"
+    secondaryText="RM 1000"
     imgLink="Nike-Dunk-High-Michigan.png"
   />
   <hr />
   <p class="font-bold my-2 text-2xl">Select Size</p>
-  <SelectSize
-  @sizeSelect="handleSelectSize"
+  <Selector
+  @sizeSelect="handleSelector"
   customStyle=" text"
   class="w-full mx-auto" 
   :size="[{name: 'US 4', price: 100, currencyType: 'RM', id: 1013},{name: 'US 4', price: 100, currencyType: 'RM', id: 1014},{name: 'US 4', price: 100, currencyType: 'RM', id: 1015},{name: 'US 4', price: 100, currencyType: 'RM', id: 1016},{name: 'US 4', price: 100, currencyType: 'RM', id: 1001},{name: 'US 4', price: 100, currencyType: 'RM', id: 1002},{name: 'US 4', price: 100, currencyType: 'RM', id: 1003},{name: 'US 4', price: 100, currencyType: 'RM', id: 1004},{name: 'US 4', price: 100, currencyType: 'RM', id: 1005},{name: 'US 4', price: 100, currencyType: 'RM', id: 1006},{name: 'US 4', price: 100, currencyType: 'RM', id: 1007},{name: 'US 4', price: 100, currencyType: 'RM', id: 1008},{name: 'US 4', price: 100, currencyType: 'RM', id: 1009},{name: 'US 4', price: 100, currencyType: 'RM', id: 1010},{name: 'US 4', price: 100, currencyType: 'RM', id: 1011},{name: 'US 4', price: 100, currencyType: 'RM', id: 1012}]"
@@ -21,6 +20,7 @@
   <p class="font-bold my-2 text-2xl">CalculationTable</p>
   <!-- Rename this as well to refect -->
   <CalculationTable
+    :data="[{name:'Your Purchase Price', price: 2252},{name:'Processing Fee (3%) (0%)', price: 0},{name:'Shipping Fee', price: 0}]"
     currency="RM"
     :purchasePrice=250
     :processingFee=0
@@ -38,8 +38,8 @@
     @onBtnRight="handleBtnRight"
   />
   <hr />
-  <p class="font-bold my-2 text-2xl">BackNextBtn</p>
-  <BackNextBtn 
+  <p class="font-bold my-2 text-2xl">TwinButtons</p>
+  <TwinButtons 
     @nextBtn="handleNext"
     @backBtn="handleBack"
 
@@ -130,10 +130,10 @@
 
 <script>
 /* eslint-disable */
-import ProductCard from "./components/ProductCard/ProductCard.molecule.vue";
-import SelectSize from "./components/SelectSize/SelectSize.molecule.vue";
+import Card from "./components/Card/Card.molecule.vue";
+import Selector from "./components/Selector/Selector.molecule.vue";
 import Partitions from "./components/Partitions/Partitions.molecule.vue";
-import BackNextBtn from "./components/BackNextBtn/BackNextBtn.molecule.vue";
+import TwinButtons from "./components/TwinButtons/TwinButtons.molecule.vue";
 import CalculationTable from "./components/CalculationTable/CalculationTable.molecule.vue";
 import toggleSwitch from "./components/ToggleSwitch/ToggleSwitch.molecule.vue";
 import CardTitle from "./components/CardTitle/CardTitle.molecule.vue";
@@ -157,10 +157,10 @@ import headersData from "./mockData/dynamic_table_header.json";
 export default {
   name: "App",
   components: {
-    ProductCard,
-    SelectSize,
+    Card,
+    Selector,
     Partitions,
-    BackNextBtn,
+    TwinButtons,
     CalculationTable,
     toggleSwitch,
     CardTitle,
@@ -216,7 +216,7 @@ export default {
     handleBack(){
       console.log('BACK pressed')
     },
-    handleSelectSize(id){
+    handleSelector(id){
       console.log(id, 'size selected')
     },
     handleBtnRight(){

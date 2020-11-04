@@ -1,15 +1,15 @@
 import {App as Application} from "vue";
-import BackNextBtn from "./BackNextBtn.molecule.vue";
+import TwinButtons from "./TwinButtons.molecule.vue";
 
 import {registerComponent} from "../../utils/plugins/index";
 
 
 const Plugin = {
     install(vue: Application) {
-        registerComponent(vue, BackNextBtn);
+        registerComponent(vue, TwinButtons);
     },
 };
 
 export default Plugin;
 
-export {BackNextBtn};
+export {TwinButtons};

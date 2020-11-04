@@ -6,13 +6,13 @@
   <Card
     primaryText="Nike Air Force 1 Low Travis Scott"
     secondaryText="RM 1000"
-    imgLink="Nike-Dunk-High-Michigan.png"
+    imgLink="/img/Nike-Dunk-High-Michigan.7216be23.png"
   />
   <hr />
   <p class="font-bold my-2 text-2xl">Select Size</p>
   <Selector
   @sizeSelect="handleSelector"
-  customStyle=" text"
+  customStyle="text-red"
   class="w-full mx-auto" 
   :size="[{name: 'US 4', price: 100, currencyType: 'RM', id: 1013},{name: 'US 4', price: 100, currencyType: 'RM', id: 1014},{name: 'US 4', price: 100, currencyType: 'RM', id: 1015},{name: 'US 4', price: 100, currencyType: 'RM', id: 1016},{name: 'US 4', price: 100, currencyType: 'RM', id: 1001},{name: 'US 4', price: 100, currencyType: 'RM', id: 1002},{name: 'US 4', price: 100, currencyType: 'RM', id: 1003},{name: 'US 4', price: 100, currencyType: 'RM', id: 1004},{name: 'US 4', price: 100, currencyType: 'RM', id: 1005},{name: 'US 4', price: 100, currencyType: 'RM', id: 1006},{name: 'US 4', price: 100, currencyType: 'RM', id: 1007},{name: 'US 4', price: 100, currencyType: 'RM', id: 1008},{name: 'US 4', price: 100, currencyType: 'RM', id: 1009},{name: 'US 4', price: 100, currencyType: 'RM', id: 1010},{name: 'US 4', price: 100, currencyType: 'RM', id: 1011},{name: 'US 4', price: 100, currencyType: 'RM', id: 1012}]"
   />

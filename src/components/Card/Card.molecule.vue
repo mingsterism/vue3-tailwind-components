@@ -3,11 +3,11 @@
   <div class="max-w-sm overflow-hidden bg-limitdLightGray">
   <img class="pb-16 px-4 w-full bg-limitdGray" :src="require('@/assets/' + imgLink + '')" alt="Sunset in the mountains">
   <div class="p-10">
-    <div class="font-sans text-lg mb-2">{{ prodName }}</div>
+    <div class="font-sans text-lg mb-2">{{ primaryText }}</div>
     <!-- <p class="text-gray-700 text-base">
       {{ description }}
     </p> -->
-    <div class="text-3xl font-sans font-bold">{{ currency }} {{ askPrice }}</div>
+    <div class="text-3xl font-sans font-bold">{{ secondaryText }}</div>
     <!-- <div class="text-xl mb-2">Bidding price: {{ currency }} {{ bidPrice }}</div> -->
 
   </div>
@@ -27,17 +27,11 @@ import { ProductCard } from '.';
 export default defineComponent({
   name: "ProductCard",
   props: {
-    prodName: {
+    primaryText: {
       type: String,
-      required: true
     },
-    askPrice: {
-      type: Number,
-      required: true
-    },
-    currency: {
+    secondaryText: {
       type: String,
-      required: true
     },
     imgLink:{
       type: String

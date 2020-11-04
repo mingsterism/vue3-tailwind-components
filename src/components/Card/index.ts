@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import ProductCard from "./ProductCard.molecule.vue";
+import Card from "./Card.molecule.vue";
 
 import { registerComponent } from "../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, ProductCard);
+    registerComponent(vue, Card);
   },
 };
 
 export default Plugin;
 
-export { ProductCard };
+export { Card };

@@ -1,6 +1,6 @@
 import TestWorld from "./testworld";
 
-import BackNextBtn from "./BackNextBtn";
+import TwinButtons from "./TwinButtons";
 import CalculationTable from "./CalculationTable";
 import CardTitle from "./CardTitle";
 import CustomBtn from "./CustomBtn";
@@ -11,9 +11,9 @@ import FlyoutMenu from "./FlyoutMenu";
 import Metadata from "./Metadata";
 import NavBar from "./NavBar";
 
-import ProductCard from "./ProductCard";
+import Card from "./Card";
 import Partitions from "./Partitions";
-import SelectSize from "./SelectSize";
+import Selector from "./Selector";
 import Tabs from "./Tabs";
 import ToggleSwitch from "./ToggleSwitch";
 import Uploader from "./Uploader";
@@ -25,7 +25,7 @@ export {
     TestWorld,
     CustomModal,
     InfoBox,
-    BackNextBtn,
+    TwinButtons,
     CalculationTable,
     CardTitle,
     CustomBtn,
@@ -35,9 +35,9 @@ export {
     FlyoutMenu,
     Metadata,
     NavBar,
-    ProductCard,
+    Card,
     Partitions,
-    SelectSize,
+    Selector,
     Tabs,
     ToggleSwitch,
     Uploader

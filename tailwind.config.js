@@ -3,7 +3,11 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx',
+  ],
   // See links below for purgeCss guide
   // https://markus.oberlehner.net/blog/setting-up-tailwind-css-with-vue/
   // https://medium.com/@FlorianWoelki/vue-3-and-tailwindcss-2041fea3bcd2

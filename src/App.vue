@@ -120,6 +120,9 @@
     <hr />
     <p class="font-bold text-2xl">Respoonsive Navbr</p>
     <NavBar class="mb-20" />
+    <hr/>
+    <p class="font-bold text-2xl">Avatar</p>
+    <Avatar/>
   </div>
     <h1>CardTitle</h1>
   <CardTitle
@@ -147,6 +150,8 @@ import Tabs from "./components/Tabs/Tabs.molecule.vue";
 import Uploader from "./components/Uploader/Uploader.molecule.vue";
 import FlyoutMenu from "./components/FlyoutMenu/FlyoutMenu.molecule.vue";
 import NavBar from "./components/NavBar/NavBar.molecule.vue";
+import Avatar from "./components/Avatar/Avatar.molecule.vue";
+
 // Importing Organisms
 import CustomModal from "./components/CustomModal/CustomModal.organism.vue";
 import InfoBox from "./components/InfoBox/InfoBox.organism.vue";
@@ -173,6 +178,7 @@ export default {
     Uploader,
     FlyoutMenu,
     NavBar,
+    Avatar,
     // Organism
     CustomModal,
     InfoBox,

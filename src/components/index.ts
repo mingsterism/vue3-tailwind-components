@@ -10,6 +10,12 @@ import DynamicTable from "./DynamicTable";
 import FlyoutMenu from "./FlyoutMenu";
 import Metadata from "./Metadata";
 import NavBar from "./NavBar";
+import Avatar from "./Avatar";
+import InputBox from "./InputBox";
+import Switch from "./Switch";
+import MerchantGallery from "./MerchantGallery";
+import Gallery from "./Gallery";
+import LoadingIndicator from "./LoadingIndicator";
 
 import Card from "./Card";
 import Partitions from "./Partitions";
@@ -40,5 +46,11 @@ export {
     Selector,
     Tabs,
     ToggleSwitch,
-    Uploader
+    Uploader,
+    Avatar,
+    InputBox,
+    Switch,
+    MerchantGallery, 
+    Gallery,
+    LoadingIndicator
 };

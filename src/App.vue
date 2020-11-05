@@ -1,82 +1,82 @@
 <template>
   <!-- <HelloWorld/><br>
   <TestWorld/><br> -->
-  <hr />
+  <hr/>
   <p class="font-bold my-2 text-2xl">Card</p>
   <Card
-    primaryText="Nike Air Force 1 Low Travis Scott"
-    secondaryText="RM 1000"
-    imgLink="/img/Nike-Dunk-High-Michigan.7216be23.png"
+      imgLink="/img/Nike-Dunk-High-Michigan.7216be23.png"
+      primaryText="Nike Air Force 1 Low Travis Scott"
+      secondaryText="RM 1000"
   />
-  <hr />
+  <hr/>
   <p class="font-bold my-2 text-2xl">Select Size</p>
   <Selector
-  @sizeSelect="handleSelector"
-  customStyle="text-red"
-  class="w-full mx-auto" 
-  :size="[{name: 'US 4', price: 100, currencyType: 'RM', id: 1013},{name: 'US 4', price: 100, currencyType: 'RM', id: 1014},{name: 'US 4', price: 100, currencyType: 'RM', id: 1015},{name: 'US 4', price: 100, currencyType: 'RM', id: 1016},{name: 'US 4', price: 100, currencyType: 'RM', id: 1001},{name: 'US 4', price: 100, currencyType: 'RM', id: 1002},{name: 'US 4', price: 100, currencyType: 'RM', id: 1003},{name: 'US 4', price: 100, currencyType: 'RM', id: 1004},{name: 'US 4', price: 100, currencyType: 'RM', id: 1005},{name: 'US 4', price: 100, currencyType: 'RM', id: 1006},{name: 'US 4', price: 100, currencyType: 'RM', id: 1007},{name: 'US 4', price: 100, currencyType: 'RM', id: 1008},{name: 'US 4', price: 100, currencyType: 'RM', id: 1009},{name: 'US 4', price: 100, currencyType: 'RM', id: 1010},{name: 'US 4', price: 100, currencyType: 'RM', id: 1011},{name: 'US 4', price: 100, currencyType: 'RM', id: 1012}]"
+      :size="[{name: 'US 4', price: 100, currencyType: 'RM', id: 1013},{name: 'US 4', price: 100, currencyType: 'RM', id: 1014},{name: 'US 4', price: 100, currencyType: 'RM', id: 1015},{name: 'US 4', price: 100, currencyType: 'RM', id: 1016},{name: 'US 4', price: 100, currencyType: 'RM', id: 1001},{name: 'US 4', price: 100, currencyType: 'RM', id: 1002},{name: 'US 4', price: 100, currencyType: 'RM', id: 1003},{name: 'US 4', price: 100, currencyType: 'RM', id: 1004},{name: 'US 4', price: 100, currencyType: 'RM', id: 1005},{name: 'US 4', price: 100, currencyType: 'RM', id: 1006},{name: 'US 4', price: 100, currencyType: 'RM', id: 1007},{name: 'US 4', price: 100, currencyType: 'RM', id: 1008},{name: 'US 4', price: 100, currencyType: 'RM', id: 1009},{name: 'US 4', price: 100, currencyType: 'RM', id: 1010},{name: 'US 4', price: 100, currencyType: 'RM', id: 1011},{name: 'US 4', price: 100, currencyType: 'RM', id: 1012}]"
+      @sizeSelect="handleSelector"
+      class="w-full mx-auto"
+      customStyle="text-red"
   />
-  <hr />
+  <hr/>
   <p class="font-bold my-2 text-2xl">CalculationTable</p>
   <!-- Rename this as well to refect -->
   <CalculationTable
-    :data="[{name:'Your Purchase Price', price: 2252},{name:'Processing Fee (3%) (0%)', price: 0},{name:'Shipping Fee', price: 0}]"
-    currency="RM"
-    :purchasePrice=250
-    :processingFee=0
-    :shippingFee=0
-    flowType="ASK"
+      :data="[{name:'Your Purchase Price', price: 2252},{name:'Processing Fee (3%) (0%)', price: 0},{name:'Shipping Fee', price: 0}]"
+      :processingFee=0
+      :purchasePrice=250
+      :shippingFee=0
+      currency="RM"
+      flowType="ASK"
   />
 
-  <hr />
+  <hr/>
 
   <p class="font-bold my-2 text-2xl">Toggle Switch</p>
-  <toggleSwitch 
-    BtnLeft="PLACE BID"
-    BtnRight="BUY NOW" 
-    @onBtnLeft="handleBtnLeft"
-    @onBtnRight="handleBtnRight"
+  <toggleSwitch
+      @onBtnLeft="handleBtnLeft"
+      @onBtnRight="handleBtnRight"
+      BtnLeft="PLACE BID"
+      BtnRight="BUY NOW"
   />
-  <hr />
+  <hr/>
   <p class="font-bold my-2 text-2xl">TwinButtons</p>
-  <TwinButtons 
-    @nextBtn="handleNext"
-    @backBtn="handleBack"
+  <TwinButtons
+      @backBtn="handleBack"
+      @nextBtn="handleNext"
 
   />
-  <hr />
+  <hr/>
   <p class="font-bold my-2 text-2xl">Partitions</p>
 
-<!-- always use generic terms -->
-<!-- describe the component. Describe the visuals of the component -->
+  <!-- always use generic terms -->
+  <!-- describe the component. Describe the visuals of the component -->
   <Partitions
-    :headings="['BRAND','RELEASE DATE','RETAIL PRICE','COLOR WAY','SHOE STYLE','CONDITION','CURRENCY']"
-    :info="['NIKE','2017-02-25','389','White/University Blue-White','CU6015&#8208;100','NEW','RM']"
+      :headings="['BRAND','RELEASE DATE','RETAIL PRICE','COLOR WAY','SHOE STYLE','CONDITION','CURRENCY']"
+      :info="['NIKE','2017-02-25','389','White/University Blue-White','CU6015&#8208;100','NEW','RM']"
   />
-  <hr />
+  <hr/>
   <!--  ADDING SOME MOLECULES AND ORGANIMS FROM ADMIN PANEL -->
   <div class="w-full p-8">
     <p class="my-2 font-bold text-2xl">Dynamic Table</p>
     <DynamicTable
-      :headers="headers"
-      :testData="bodyData"
-      :numOfRows="5"
-      :isScrollAble="true"
+        :headers="headers"
+        :isScrollAble="true"
+        :numOfRows="5"
+        :testData="bodyData"
     >
     </DynamicTable>
-    <hr />
+    <hr/>
     <p class="my-2 font-bold text-2xl">Input Box</p>
     <CustomInput
-      inputType="text"
-      inputName="name"
-      placeholder="Placeholder Text"
+        inputName="name"
+        inputType="text"
+        placeholder="Placeholder Text"
     />
-    <hr />
+    <hr/>
     <p class="my-4 font-bold text-2xl">Custom Button And Modal</p>
     <CustomModal
-      confirmBtnText="Confirm"
-      cancelBtnText="Cancel"
-      customStyle="w-2/5"
+        cancelBtnText="Cancel"
+        confirmBtnText="Confirm"
+        customStyle="w-2/5"
     >
       <template v-slot>
         <CustomBtn btnTxt="Click me">
@@ -89,45 +89,42 @@
         </div>
       </template>
     </CustomModal>
-    <hr />
+    <hr/>
     <p class="my-4 font-bold text-2xl">DropDown</p>
     <div class="w-1/4 mx-auto h-10 mb-4">
       <DropDown
-        placeHolderText="Select Catagory"
-        :dropOptions="['Option 0', 'Option 1']"
+          :dropOptions="['Option 0', 'Option 1']"
+          placeHolderText="Select Catagory"
       />
     </div>
-    <hr />
+    <hr/>
     <p class="my-4 font-bold text-2xl">Tabs</p>
     <Tabs
-      :tabs="tabsData"
-      @selected="handleSelect"
-      customStyle="flex justify-around mt-10 w-2/3 mx-auto"
+        :tabs="tabsData"
+        @selected="handleSelect"
+        customStyle="flex justify-around mt-10 w-2/3 mx-auto"
     >
     </Tabs>
-    <hr />
+    <hr/>
     <p class="my-4 font-bold text-2xl">Uploader</p>
     <div class="w-1/3 mx-auto h-20 mb-4">
-      <Uploader class="mx-auto" />
+      <Uploader class="mx-auto"/>
     </div>
 
-    <hr />
-    <p class="my-4 font-bold text-2xl">Info Box</p>
-    <InfoBox :metadata="metadata" title="TestTitle" />
-    <hr />
-    <p class="font-bold text-2xl">Flyout Menu</p>
-    <FlyoutMenu :submenus="subMenu" />
-    <hr />
-    <p class="font-bold text-2xl">Respoonsive Navbr</p>
-    <NavBar class="mb-20" />
     <hr/>
-    <p class="font-bold text-2xl">Avatar</p>
-    <Avatar/>
+    <p class="my-4 font-bold text-2xl">Info Box</p>
+    <InfoBox :metadata="metadata" title="TestTitle"/>
+    <hr/>
+    <p class="font-bold text-2xl">Flyout Menu</p>
+    <FlyoutMenu :submenus="subMenu"/>
+    <hr/>
+    <p class="font-bold text-2xl">Respoonsive Navbr</p>
+    <NavBar class="mb-20"/>
   </div>
-    <h1>CardTitle</h1>
+  <h1>CardTitle</h1>
   <CardTitle
-    heading="BUY/BID PRODUCT"
-    sub-heading="Please choose your billing and shipping method"
+      heading="BUY/BID PRODUCT"
+      sub-heading="Please choose your billing and shipping method"
   />
 </template>
 
@@ -188,14 +185,14 @@ export default {
       headers: headersData,
       bodyData: tableData,
       tabsData: [
-        { name: "TAB ONE" },
-        { name: "TAB TWO" },
-        { name: "TAB THREE" },
-        { name: "TAB FOUR" },
+        {name: "TAB ONE"},
+        {name: "TAB TWO"},
+        {name: "TAB THREE"},
+        {name: "TAB FOUR"},
       ],
       subMenu: [
-        { name: "menu1", linkTo: "/merchant/1" },
-        { name: "menu2", linkTo: "/merchant/1" },
+        {name: "menu1", linkTo: "/merchant/1"},
+        {name: "menu2", linkTo: "/merchant/1"},
       ],
       metadata: {
         name: "Luke",
@@ -216,19 +213,19 @@ export default {
     handleSelect(tabName) {
       this.selectedTab = tabName;
     },
-    handleNext(){
+    handleNext() {
       console.log('NEXT pressed')
     },
-    handleBack(){
+    handleBack() {
       console.log('BACK pressed')
     },
-    handleSelector(id){
+    handleSelector(id) {
       console.log(id, 'size selected')
     },
-    handleBtnRight(){
+    handleBtnRight() {
       console.log('Right btn')
     },
-    handleBtnLeft(){
+    handleBtnLeft() {
       console.log('Left btn')
 
     }

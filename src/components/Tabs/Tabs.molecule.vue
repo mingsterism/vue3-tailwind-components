@@ -2,11 +2,11 @@
   <div :class="customStyle">
     <span :key="index" v-for="(key, index) in tabs">
       <span
-        :class="{
+          :class="{
           baseStyle: true,
           'text-blue font-bold': key.name == selectedTabName,
         }"
-        @click="handleSelected(key.name)"
+          @click="handleSelected(key.name)"
       >
         {{ key.name }}
         <!-- <span @click="handleDelete(index)"> x </span> -->
@@ -21,7 +21,7 @@
 /* eslint-disable */
 import {
   defineComponent,
-  
+  ref
 } from 'vue';
 
 export default defineComponent({

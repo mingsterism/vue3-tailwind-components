@@ -49,10 +49,8 @@
 
   <!-- always use generic terms -->
   <!-- describe the component. Describe the visuals of the component -->
-  <Partitions
-      :headings="['BRAND','RELEASE DATE','RETAIL PRICE','COLOR WAY','SHOE STYLE','CONDITION','CURRENCY']"
-      :info="['NIKE','2017-02-25','389','White/University Blue-White','CU6015&#8208;100','NEW','RM']"
-  />
+  <!-- make data object -->
+  <Partitions :partitionsdata="partitionsData"/>
   <hr/>
   <!--  ADDING SOME MOLECULES AND ORGANIMS FROM ADMIN PANEL -->
   <div class="w-full p-8">
@@ -108,7 +106,7 @@
     <hr/>
     <p class="my-4 font-bold text-2xl">Uploader</p>
     <div class="w-1/3 mx-auto h-20 mb-4">
-      <Uploader class="mx-auto"/>
+    <Uploader class="mx-auto"/>
     </div>
 
     <hr/>
@@ -118,8 +116,13 @@
     <p class="font-bold text-2xl">Flyout Menu</p>
     <FlyoutMenu :submenus="subMenu"/>
     <hr/>
-    <p class="font-bold text-2xl">Respoonsive Navbr</p>
-    <NavBar class="mb-20"/>
+    <p class="font-bold text-2xl">Responsive Navbr</p>
+    <NavBar 
+      class="mb-20" 
+      navBarTitle="Flowtrail UI"
+      :navBarElement="navbarelement"
+      :navBarAdditionElement="navbaradditionelement"
+    />
   </div>
   <h1>CardTitle</h1>
   <CardTitle
@@ -163,7 +166,6 @@ import NavBar from "./components/NavBar/NavBar.molecule.vue";
 import Avatar from "./components/Avatar/Avatar.molecule.vue";
 import Gallery from "./components/Gallery/Gallery.molecule.vue";
 import LoadingIndicator from "./components/LoadingIndicator/LoadingIndicator.molecule.vue";
-import PhotoGallery  from "./components/PhotoGallery/PhotoGallery.molecule.vue";
 import Switch from "./components/Switch/Switch.molecule.vue";
 
 
@@ -199,7 +201,6 @@ export default {
     Avatar,
     Gallery,
     LoadingIndicator,
-    PhotoGallery,
     Switch,
     // Organism
     CustomModal,
@@ -209,6 +210,36 @@ export default {
   data() {
     return {
       headers: headersData,
+      partitionsData: [
+        {
+          heading: "BRAND",
+          info:"NIKE",
+        },
+        {
+          heading: "RELEASE DATE",
+          info:"2017-02-25",
+        },
+        {
+          heading: "RETAIL PRICE",
+          info:"389",
+        },
+        {
+          heading: "COLOR WAY",
+          info:"White/University Blue-White",
+        },
+        {
+          heading: "SHOE STYLE",
+          info:"CU6015&#8208;100",
+        },
+        {
+          heading: "CONDITION",
+          info:"NEW",
+        },
+        {
+          heading: "CURRENCY",
+          info:"RM",
+        },
+      ],
       bodyData: tableData,
       tabsData: [
         {name: "TAB ONE"},
@@ -233,6 +264,42 @@ export default {
         B: "C",
         D: "E",
       },
+      navbarelement: [ 
+        {
+          name: "Blog",
+          href:"#"
+        },
+        {
+          name: "Portfolio",
+          href:"#"
+        },
+        {
+          name: "About",
+          href:"#"
+        },
+        {
+          name: "Contact",
+          href:"#"
+        }
+      ],
+      navbaradditionelement: [ 
+        {
+          name: "Appearance",
+          infor:"Easy customization",
+          href:"#"
+
+        },
+        {
+          name: "Comments",
+          infor:"Check your latest comments",
+          href:"#"
+        },
+        {
+          name: "Analytics",
+          infor:"Take a look at your statistics",
+          href:"#"
+        }
+      ],
     };
   },
   methods: {

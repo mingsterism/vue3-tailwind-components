@@ -1,8 +1,8 @@
 <template>
   <div class="flex">
-    <div v-for="index in headingsArray.length-1" :key="index" class="w-1/6 border-r-2 border-gray-200 h-12 my-6">
-      <p class="text-gray-500 text-base font-bold font-sans">{{ headingsArray[index] }}</p>
-      <p class="font-sans text-xl">{{ infoArray[index] }}</p>
+    <div v-for="(value,index) in partitionsdata" :key="index" class="w-1/6 border-r-2 border-gray-200 h-12 my-6">
+      <p class="text-gray-500 text-base font-bold font-sans">{{ partitionsdata[index].heading }}</p>
+      <p class="font-sans text-xl">{{ partitionsdata[index].info }}</p>
     </div>
     <!-- <div class="w-1/6 border-r-2 border-gray-200 h-12 my-6">
       <p class="text-gray-500 text-base font-bold font-sans">RELEASE DATE</p>
@@ -38,20 +38,9 @@ import {
 export default defineComponent({
   name: "Partitions",
   props: {
-    headings: {
-      type: Array,
-    },
-    info: {
+    partitionsdata: {
       type: Array,
     }
   },
-  computed:{
-    headingsArray: function(){
-      return this.headings
-    },
-    infoArray: function(){
-      return this.info
-    }
-  }
 });
 </script>

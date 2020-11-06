@@ -132,12 +132,7 @@
   <hr>
   <h1>Gallery</h1>
   <Gallery/>
-  <hr>
-  <h1>InputBox</h1>
-  <InputBox 
-		inputData="name" 
-		type="text"
-	/>
+
   <hr>
   <!-- <h1> LoadingIndicator </h1>
   <LoadingIndicator />
@@ -167,7 +162,6 @@ import FlyoutMenu from "./components/FlyoutMenu/FlyoutMenu.molecule.vue";
 import NavBar from "./components/NavBar/NavBar.molecule.vue";
 import Avatar from "./components/Avatar/Avatar.molecule.vue";
 import Gallery from "./components/Gallery/Gallery.molecule.vue";
-import InputBox from "./components/InputBox/InputBox.molecule.vue";
 import LoadingIndicator from "./components/LoadingIndicator/LoadingIndicator.molecule.vue";
 import PhotoGallery  from "./components/PhotoGallery/PhotoGallery.molecule.vue";
 import Switch from "./components/Switch/Switch.molecule.vue";
@@ -201,7 +195,6 @@ export default {
     NavBar,
     Avatar,
     Gallery,
-    InputBox,
     LoadingIndicator,
     PhotoGallery,
     Switch,

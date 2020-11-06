@@ -10,7 +10,7 @@
           @click="handleSelected(key.name)"
       >
         {{ key.name }}
-        <span @click="handleDelete(index)" class="text-red-700 font-bold">> x </span>
+        <span @click="handleDelete(index)" class="text-red-700 font-bold"> x </span>
       </span>
     </span>
     <span @click="$emit('addTab')" class="cursor-pointer font-bold text-green-500">+</span>

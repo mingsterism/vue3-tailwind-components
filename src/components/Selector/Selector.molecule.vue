@@ -1,21 +1,21 @@
 <template>
-  <div class="container">
-    <div class="flex flex-wrap -mx-2">
+  <div class="flex flex-wrap">
+    <!-- <div class="flex flex-wrap"> -->
       <div
           :key="item.id"
-          class="cursor-pointer box-border border-gray-700 m-2 p-2 w-1/5"
-          :class="clicked == item.id?'cursor-pointer m-2 p-2 w-1/5 bg-blue text-white border-2':'cursor-pointer border-2 box-border border-gray-700 flex-none m-2 p-2 w-1/5'"
+          class="default"
+          :class="clicked == item.id?'default clicked':'default unclicked'"
           v-for="item in sizeArray"
           v-on:click="onSelectedSize(item.id)"
       >
-        <p class="font-extrabold">
+        <p class="flex-row font-extrabold">
           {{ item.name }}
         </p>
-        <p>
+        <p class="flex-row">
           {{ item.currencyType }} {{ item.price }}
         </p>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 <style scoped>
@@ -68,3 +68,14 @@ export default defineComponent({
   }
 });
 </script>
+<style scoped>
+.clicked{
+  @apply cursor-pointer m-2 p-2 w-auto bg-blue text-white border-2;
+}
+.unclicked{
+  @apply cursor-pointer border-2 box-border border-gray-700 flex-none m-2 p-2 w-auto;
+}
+.default{
+  @apply flex-auto cursor-pointer box-border border-gray-700 m-2 p-2 w-1/5 justify-between;
+}
+</style>

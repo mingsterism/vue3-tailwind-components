@@ -2,14 +2,14 @@
   <div>
     <div class="flex">
       <button
-        class="w-1/2 border-2 h-12 hover:bg-gray-300 bg-gray-200 text-black font-bold"
+        class="w-1/2 border-2 h-16 hover:bg-gray-300 bg-gray-200 text-black font-bold"
         @click="back()"
 
       >
         BACK
       </button>
       <button
-        class="w-1/2 border-2 h-12 text-white hover:bg-blueHover bg-blue font-bold border-b-4 border-blue"
+        class="w-1/2 border-2 h-16 text-white hover:bg-blueHover bg-blue font-bold border-b-4 border-blue"
         @click="next()"
 
       >
@@ -38,7 +38,6 @@ export default defineComponent({
     back() {
       console.log("back");
       this.$emit("backBtn");
-
     }
   }
 });

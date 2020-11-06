@@ -1,6 +1,6 @@
 <template>
-  <div >
-    <p class="text-xs" :class="customStyleLabel">{{fieldLabel}}</p>
+  <div>
+    <p :class="customStyleLabel" class="text-xs">{{ fieldLabel }}</p>
     <label>
       <input
           :class="[{
@@ -14,11 +14,16 @@
           class="block px-4 border-solid border-1 border-black h-10 text-sm rounded-md"
       />
     </label>
-    <p class="text-xs">{{helpText}}</p>
+    <p class="text-xs">{{ helpText }}</p>
   </div>
 </template>
 <script>
-export default {
+import {
+  defineComponent,
+
+} from 'vue';
+
+export default defineComponent({
   name: "CustomInput",
   props: {
     inputType: {
@@ -50,7 +55,7 @@ export default {
     }
   },
   methods: {
-    handleInput (e) {
+    handleInput(e) {
       this.$emit('change', {
         inputName: this.inputName,
         inputText: e.target.value
@@ -58,7 +63,7 @@ export default {
 
     }
   }
-};
+});
 </script>
 <style scoped>
 .isSquared {

@@ -4,7 +4,7 @@
   <hr/>
   <p class="font-bold my-2 text-2xl">Card</p>
   <Card
-      imgLink="/img/Nike-Dunk-High-Michigan.7216be23.png"
+      imgLink="https://storage.googleapis.com/lele-bucket-staging/uploads/images/menus/item/288/288_thumb.jpg?v=63771616629"
       primaryText="Nike Air Force 1 Low Travis Scott"
       secondaryText="RM 1000"
   />
@@ -73,22 +73,22 @@
     />
     <hr/>
     <p class="my-4 font-bold text-2xl">Custom Button And Modal</p>
-    <CustomModal
-        cancelBtnText="Cancel"
-        confirmBtnText="Confirm"
-        customStyle="w-2/5"
-    >
-      <template v-slot>
-        <CustomBtn btnTxt="Click me">
-          <template v-slot:default></template>
-        </CustomBtn>
-      </template>
-      <template v-slot:body>
-        <div class="text-center px-6">
-          <p>This is A Modal</p>
-        </div>
-      </template>
-    </CustomModal>
+<!--    <CustomModal-->
+<!--        cancelBtnText="Cancel"-->
+<!--        confirmBtnText="Confirm"-->
+<!--        customStyle="w-2/5"-->
+<!--    >-->
+<!--      <template v-slot>-->
+<!--        <CustomBtn btnTxt="Click me">-->
+<!--          <template v-slot:default></template>-->
+<!--        </CustomBtn>-->
+<!--      </template>-->
+<!--      <template v-slot:body>-->
+<!--        <div class="text-center px-6">-->
+<!--          <p>This is A Modal</p>-->
+<!--        </div>-->
+<!--      </template>-->
+<!--    </CustomModal>-->
     <hr/>
     <p class="my-4 font-bold text-2xl">DropDown</p>
     <div class="w-1/4 mx-auto h-10 mb-4">
@@ -126,6 +126,14 @@
       heading="BUY/BID PRODUCT"
       sub-heading="Please choose your billing and shipping method"
   />
+  <PhotoCard
+      imgSrc="https://storage.googleapis.com/lele-bucket-staging/uploads/images/menus/item/288/288_thumb.jpg?v=63771616629"
+      primaryText="hello"
+      secondaryText="this is a test descrption of the item"
+      img-alt="test"
+  >
+    <h1 class="m-2">RM100</h1>
+  </PhotoCard>
 </template>
 
 <script>
@@ -152,9 +160,12 @@ import Avatar from "./components/Avatar/Avatar.molecule.vue";
 // Importing Organisms
 import CustomModal from "./components/CustomModal/CustomModal.organism.vue";
 import InfoBox from "./components/InfoBox/InfoBox.organism.vue";
+import PhotoCard from "./components/PhotoCard/PhotoCard.vue"
 // Mock Data for Table
 import tableData from "./mockData/dynamic_table_data.json";
 import headersData from "./mockData/dynamic_table_header.json";
+
+
 
 export default {
   name: "App",
@@ -179,6 +190,7 @@ export default {
     // Organism
     CustomModal,
     InfoBox,
+    PhotoCard
   },
   data() {
     return {

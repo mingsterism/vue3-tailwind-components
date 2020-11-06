@@ -4,15 +4,22 @@
       <span
           :class="{
           baseStyle: true,
-          'text-blue font-bold': key.name == selectedTabName,
+          'text-blue font-bold': key.name === selectedTabName,
         }"
           @click="handleSelected(key.name)"
       >
         {{ key.name }}
-        <!-- <span @click="handleDelete(index)"> x </span> -->
+        <span
+            v-if="allowDelete"
+            @click="handleDelete(index)" class="text-red-700 font-bold">
+            x
+          </span>
+
       </span>
     </span>
-    <!-- <span @click="$emit('addTab')" class="cursor-pointer font-bold">+</span> -->
+     <span
+         v-if="allowAdd"
+         @click="$emit('addTab')" class="cursor-pointer font-bold">+</span>
   </div>
   <slot></slot>
 </template>
@@ -21,7 +28,6 @@
 /* eslint-disable */
 import {
   defineComponent,
-  ref
 } from 'vue';
 
 export default defineComponent({
@@ -39,6 +45,14 @@ export default defineComponent({
     customStyle: {
       type: String,
     },
+    allowDelete: {
+      type: Boolean,
+      default: false
+    },
+    allowAdd: {
+      type: Boolean,
+      default: false
+    }
   },
   methods: {
     handleSelected(tabName) {
@@ -46,9 +60,9 @@ export default defineComponent({
       console.log(this.selectedTabName);
       this.$emit("selected", tabName);
     },
-    // handleDelete(index) {
-    //   this.$emit("deleteTab", index);
-    // },
+    handleDelete(index) {
+      this.$emit("deleteTab", index);
+    },
   },
 });
 </script>

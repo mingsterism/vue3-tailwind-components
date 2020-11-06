@@ -41,7 +41,7 @@ export default defineComponent({
 
 <style>
 .toggle__dot {
-  top: -0.25rem;
+  /* top: -0.25rem; */
   left: -0.25rem;
   transition: all 0.3s ease-in-out;
 }

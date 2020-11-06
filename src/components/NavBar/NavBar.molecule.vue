@@ -13,7 +13,7 @@
             <a
               class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
               href="#"
-              >Flowtrail UI</a
+              >{{navBarTitle}}</a
             >
             <button
               @click="open = !open"
@@ -40,25 +40,11 @@
             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
           >
             <a
+              v-for="(value,index) in navBarElement" :key="index"
               class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Blog</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Portfolio</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >About</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Contact</a
-            >
+              :href="navBarElement[index].href"
+              >{{navBarElement[index].name}}
+            </a>
             <div class="relative">
               <button
                 @click="handleOpen"
@@ -93,8 +79,9 @@
                 >
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <a
+                      v-for="(value,index) in navBarAdditionElement" :key="index"
                       class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      href="#"
+                      :href="navBarAdditionElement[index].href"
                     >
                       <div class="bg-teal-500 text-white rounded-lg p-3">
                         <svg
@@ -112,61 +99,8 @@
                         </svg>
                       </div>
                       <div class="ml-3">
-                        <p class="font-semibold">Appearance</p>
-                        <p class="text-sm">Easy customization</p>
-                      </div>
-                    </a>
-
-                    <a
-                      class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      href="#"
-                    >
-                      <div class="bg-teal-500 text-white rounded-lg p-3">
-                        <svg
-                          class="md:h-6 md:w-6 h-4 w-4"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <div class="ml-3">
-                        <p class="font-semibold">Comments</p>
-                        <p class="text-sm">Check your latest comments</p>
-                      </div>
-                    </a>
-
-                    <a
-                      class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      href="#"
-                    >
-                      <div class="bg-teal-500 text-white rounded-lg p-3">
-                        <svg
-                          class="md:h-6 md:w-6 h-4 w-4"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                          ></path>
-                          <path
-                            d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <div class="ml-3">
-                        <p class="font-semibold">Analytics</p>
-                        <p class="text-sm">Take a look at your statistics</p>
+                        <p class="font-semibold">{{navBarAdditionElement[index].name}}</p>
+                        <p class="text-sm">{{navBarAdditionElement[index].infor}}</p>
                       </div>
                     </a>
                   </div>
@@ -193,6 +127,17 @@ export default defineComponent({
       open: false,
     };
   },
+  props: {
+    navBarTitle: {
+      type: String,
+    },
+    navBarElement: {
+      type: Array,
+    },
+    navBarAdditionElement: {
+      type: Array,
+    }
+  },
   methods: {
     handleOpen() {
       console.log(this.open);
@@ -201,7 +146,7 @@ export default defineComponent({
     handleClickAway() {
       console.log("CLICK AWAY");
     },
-  },
+  }
 });
 </script>
 

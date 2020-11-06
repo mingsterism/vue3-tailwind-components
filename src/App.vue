@@ -126,14 +126,19 @@
       heading="BUY/BID PRODUCT"
       sub-heading="Please choose your billing and shipping method"
   />
-  <PhotoCard
-      imgSrc="https://storage.googleapis.com/lele-bucket-staging/uploads/images/menus/item/288/288_thumb.jpg?v=63771616629"
-      primaryText="hello"
-      secondaryText="this is a test descrption of the item"
-      img-alt="test"
-  >
-    <h1 class="m-2">RM100</h1>
-  </PhotoCard>
+  <hr>
+  <h1>Avatar</h1>
+  <Avatar imgSrc="../src/assets/Nike-Dunk-High-Michigan.png"/>
+  <hr>
+  <h1>Gallery</h1>
+  <Gallery/>
+
+  <hr>
+  <!-- <h1> LoadingIndicator </h1>
+  <LoadingIndicator />
+  <hr> -->
+  <h1>Switch</h1>
+  <Switch/>
 </template>
 
 <script>
@@ -156,6 +161,11 @@ import Uploader from "./components/Uploader/Uploader.molecule.vue";
 import FlyoutMenu from "./components/FlyoutMenu/FlyoutMenu.molecule.vue";
 import NavBar from "./components/NavBar/NavBar.molecule.vue";
 import Avatar from "./components/Avatar/Avatar.molecule.vue";
+import Gallery from "./components/Gallery/Gallery.molecule.vue";
+import LoadingIndicator from "./components/LoadingIndicator/LoadingIndicator.molecule.vue";
+import PhotoGallery  from "./components/PhotoGallery/PhotoGallery.molecule.vue";
+import Switch from "./components/Switch/Switch.molecule.vue";
+
 
 // Importing Organisms
 import CustomModal from "./components/CustomModal/CustomModal.organism.vue";
@@ -187,6 +197,10 @@ export default {
     FlyoutMenu,
     NavBar,
     Avatar,
+    Gallery,
+    LoadingIndicator,
+    PhotoGallery,
+    Switch,
     // Organism
     CustomModal,
     InfoBox,

@@ -3,22 +3,22 @@
     <h1>Gallery</h1>
     <!-- <vx-card title="Gallery" class="mb-base"> -->
     <div class="demo-alignment">
-      <Button btnTxt="Add Image" title="Change" @click="handleAddImage" />
+      <!-- <CustomBtn btnTxt="Add Image" title="Change" @click="handleAddImage" /> -->
     </div>
     <div class="demo-alignment">
       <div :key="index" :src="image.thumb" v-for="(image, index) in images">
         <img :src="image.thumb" class="img-rounded-corners" />
         <div class="demo-alignment">
-          <Button
+          <!-- <CustomBtn
             btnTxt="Change"
             title="Change"
             @click="handleUpdateImage(image.id, image.thumb)"
           />
-          <Button
+          <CustomBtn
             btnTxt="Delete"
             title="Delete"
             @click="promptDeleteMerchantImage(image.id)"
-          />
+          /> -->
           <!-- <vs-button
               icon-pack="feather"
               color="danger"
@@ -68,17 +68,23 @@
 </template>
 
 <script>
-import Button from "/@/components/molecules/PrimaryButton.molecule.vue";
-import CustomBtn from "/@/components/molecules/PrimaryButton.molecule.vue";
-export default {
-  name: "MerchantGallery",
+// import CustomBtn from "/src/components/CustomBtn/CustomBtn.molecule.vue";
+import {
+  defineComponent,
+  
+} from 'vue';
+
+
+export default defineComponent({
+  name: "PhotoGallery",
   components: {
-    Button,
+    // CustomBtn,
   },
   props: {
     images: {
       type: Array,
       required: true,
+      default: "../../assets/img/download.jpeg"
     },
   },
   data() {
@@ -202,7 +208,7 @@ export default {
         });
     },
   },
-};
+});
 </script>
 <style>
 .img-rounded-corners {

@@ -2,6 +2,7 @@
   <div :class="customStyle">
     <span :key="index" v-for="(key, index) in tabs">
       <span
+          class="bg-gray-100 m-1 rounded hover:bg-gray-400"
           :class="{
           baseStyle: true,
           'text-blue font-bold': key.name === selectedTabName,

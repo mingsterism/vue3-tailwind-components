@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import InputBox from "./InputBox.organism.vue";
+import PhotoGallery from "./PhotoGallery.organism.vue";
 
 import { registerComponent } from "../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, InputBox);
+    registerComponent(vue, PhotoGallery);
   },
 };
 
 export default Plugin;
 
-export { InputBox };
+export { PhotoGallery };

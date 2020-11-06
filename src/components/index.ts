@@ -13,7 +13,7 @@ import NavBar from "./NavBar";
 import Avatar from "./Avatar";
 import InputBox from "./InputBox";
 import Switch from "./Switch";
-import MerchantGallery from "./MerchantGallery";
+import PhotoGallery from "./PhotoGallery";
 import Gallery from "./Gallery";
 import LoadingIndicator from "./LoadingIndicator";
 
@@ -50,7 +50,7 @@ export {
     Avatar,
     InputBox,
     Switch,
-    MerchantGallery, 
+    PhotoGallery, 
     Gallery,
     LoadingIndicator
 };

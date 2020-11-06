@@ -13,9 +13,14 @@
 </template>
 
 <script>
-import CustomBtn from '/@/components/molecules/CustomBtn.molecule.vue'
+// import CustomBtn from '/@/components/CustomBtn/CustomBtn.molecule.vue'
+import {
+  defineComponent,
+  
+} from 'vue';
 
-export default {
+
+export default defineComponent({
   name: "Gallery",
   props: {
     uploadEndpoint: {
@@ -38,13 +43,13 @@ export default {
     }
   },
   components: {
-    CustomBtn
+    // CustomBtn
   },
   methods: {
 
 
   }
-}
+});
 </script>
 
 <style scoped>

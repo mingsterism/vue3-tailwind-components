@@ -163,7 +163,6 @@ import NavBar from "./components/NavBar/NavBar.molecule.vue";
 import Avatar from "./components/Avatar/Avatar.molecule.vue";
 import Gallery from "./components/Gallery/Gallery.molecule.vue";
 import LoadingIndicator from "./components/LoadingIndicator/LoadingIndicator.molecule.vue";
-import PhotoGallery  from "./components/PhotoGallery/PhotoGallery.molecule.vue";
 import Switch from "./components/Switch/Switch.molecule.vue";
 
 
@@ -196,7 +195,6 @@ export default {
     Avatar,
     Gallery,
     LoadingIndicator,
-    PhotoGallery,
     Switch,
     // Organism
     CustomModal,

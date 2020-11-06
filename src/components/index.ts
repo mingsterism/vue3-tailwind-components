@@ -11,9 +11,7 @@ import FlyoutMenu from "./FlyoutMenu";
 import Metadata from "./Metadata";
 import NavBar from "./NavBar";
 import Avatar from "./Avatar";
-import InputBox from "./InputBox";
 import Switch from "./Switch";
-import PhotoGallery from "./PhotoGallery";
 import Gallery from "./Gallery";
 import LoadingIndicator from "./LoadingIndicator";
 
@@ -48,9 +46,7 @@ export {
     ToggleSwitch,
     Uploader,
     Avatar,
-    InputBox,
     Switch,
-    PhotoGallery, 
     Gallery,
     LoadingIndicator
 };

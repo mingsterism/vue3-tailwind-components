@@ -1,28 +1,29 @@
 <template>
-  <div>
-    <input
-      :class="{
-        'w-full border-solid border-2 h-12 border-black bg-gray-200': isSearchBox,
-      }"
-      :name="inputName"
-      :placeholder="placeholder"
-      :required="isRequired"
-      :type="inputType"
-      class="block w-full h-10 px-4 border-solid border-1 border-black text-sm"
-    />
+  <div >
+    <p class="text-xs" :class="customStyleLabel">{{fieldLabel}}</p>
+    <label>
+      <input
+          :class="[{
+          'w-full rounded-md border-solid border-2 h-12 border-black bg-gray-200': true,
+        }, customStyleInput]"
+          :name="inputName"
+          :placeholder="placeholder"
+          :required="isRequired"
+          :type="inputType"
+          @input="handleInput"
+          class="block px-4 border-solid border-1 border-black h-10 text-sm rounded-md"
+      />
+    </label>
+    <p class="text-xs">{{helpText}}</p>
   </div>
 </template>
 <script>
-import {
-  defineComponent,
-  
-} from 'vue';
-
-export default defineComponent({
+export default {
   name: "CustomInput",
   props: {
     inputType: {
       type: String,
+      required: true,
     },
     inputName: {
       type: String,
@@ -35,34 +36,31 @@ export default defineComponent({
     },
     fieldLabel: {
       type: String,
+      required: false
     },
     helpText: {
       type: String,
+      required: false
     },
-    inputValue: {
-      type: String,
+    customStyleInput: {
+      type: String
     },
-    isSearchBox: {
-      type: Boolean,
-    },
+    customStyleLabel: {
+      type: String
+    }
   },
-  // data() {
-  //   return {
-  //     inputValue: "",
-  //   };
-  // },
-  // methods: {
-  // handleInput(e) {
-  // this.$emit("change", {
-  // inputName: this.inputName,
-  // inputText: e.target.value,
-  // });
-  // },
-  // },
-});
+  methods: {
+    handleInput (e) {
+      this.$emit('change', {
+        inputName: this.inputName,
+        inputText: e.target.value
+      })
+
+    }
+  }
+};
 </script>
 <style scoped>
-@import "@css/main.css";
 .isSquared {
   @apply rounded-none;
 }

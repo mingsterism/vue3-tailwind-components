@@ -2,6 +2,7 @@
   <div :class="customStyle">
     <span :key="index" v-for="(key, index) in tabs">
       <span
+          class="bg-gray-100 m-1 rounded hover:bg-gray-400"
           :class="{
           baseStyle: true,
           'text-blue font-bold': key.name == selectedTabName,
@@ -9,10 +10,10 @@
           @click="handleSelected(key.name)"
       >
         {{ key.name }}
-        <!-- <span @click="handleDelete(index)"> x </span> -->
+        <span @click="handleDelete(index)" class="text-red-700 font-bold">> x </span>
       </span>
     </span>
-    <!-- <span @click="$emit('addTab')" class="cursor-pointer font-bold">+</span> -->
+    <span @click="$emit('addTab')" class="cursor-pointer font-bold text-green-500">+</span>
   </div>
   <slot></slot>
 </template>

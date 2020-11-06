@@ -1,14 +1,14 @@
 import { App as Application } from "vue";
-import MerchantGallery from "./MerchantGallery.organism.vue";
+import PhotoGallery from "./PhotoGallery.organism.vue";
 
 import { registerComponent } from "../../utils/plugins/index";
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, MerchantGallery);
+    registerComponent(vue, PhotoGallery);
   },
 };
 
 export default Plugin;
 
-export { MerchantGallery };
+export { PhotoGallery };

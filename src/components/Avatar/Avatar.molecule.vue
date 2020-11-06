@@ -22,7 +22,7 @@ export default defineComponent({
     imgSrc: {
       type: String,
       required: false,
-      default: "../../assets/img/download.jpeg"
+      default: "../../assets/yeezy_boost.jpg"
     },
     textVal: {
       type: String,

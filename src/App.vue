@@ -126,6 +126,24 @@
       heading="BUY/BID PRODUCT"
       sub-heading="Please choose your billing and shipping method"
   />
+  <hr>
+  <h1>Avatar</h1>
+  <Avatar imgSrc="../src/assets/Nike-Dunk-High-Michigan.png"/>
+  <hr>
+  <h1>Gallery</h1>
+  <Gallery/>
+  <hr>
+  <h1>InputBox</h1>
+  <InputBox 
+		inputData="name" 
+		type="text"
+	/>
+  <hr>
+  <!-- <h1> LoadingIndicator </h1>
+  <LoadingIndicator />
+  <hr> -->
+  <h1>Switch</h1>
+  <Switch/>
 </template>
 
 <script>
@@ -148,6 +166,12 @@ import Uploader from "./components/Uploader/Uploader.molecule.vue";
 import FlyoutMenu from "./components/FlyoutMenu/FlyoutMenu.molecule.vue";
 import NavBar from "./components/NavBar/NavBar.molecule.vue";
 import Avatar from "./components/Avatar/Avatar.molecule.vue";
+import Gallery from "./components/Gallery/Gallery.molecule.vue";
+import InputBox from "./components/InputBox/InputBox.molecule.vue";
+import LoadingIndicator from "./components/LoadingIndicator/LoadingIndicator.molecule.vue";
+import PhotoGallery  from "./components/PhotoGallery/PhotoGallery.molecule.vue";
+import Switch from "./components/Switch/Switch.molecule.vue";
+
 
 // Importing Organisms
 import CustomModal from "./components/CustomModal/CustomModal.organism.vue";
@@ -176,6 +200,11 @@ export default {
     FlyoutMenu,
     NavBar,
     Avatar,
+    Gallery,
+    InputBox,
+    LoadingIndicator,
+    PhotoGallery,
+    Switch,
     // Organism
     CustomModal,
     InfoBox,

@@ -13,7 +13,13 @@
 </template>
 
 <script>
-export default {
+import {
+  defineComponent,
+  
+} from 'vue';
+
+
+export default defineComponent({
   name: "customInput",
   props: {
     inputData: {
@@ -36,7 +42,7 @@ export default {
       this.$emit('change', e.target.value)
     }
   }
-};
+});
 </script>
 
 <style scoped>

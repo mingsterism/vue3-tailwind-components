@@ -17,7 +17,8 @@
       class="w-full mx-auto"
       customStyle="text-red"
   />
-  <hr/>
+  <!-- </div> -->
+  <hr />
   <p class="font-bold my-2 text-2xl">CalculationTable</p>
   <!-- Rename this as well to refect -->
   <CalculationTable

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="mx-auto">
     <div class="bg-limitdLightGray flex flex-wrap overflow-hidden">
       <!-- <div
           class="p-3 col-span-3 text-center font-bold text-2xl my-4 border-b-2"
